@@ -1,0 +1,154 @@
+.plateDetail{
+    height:1360px;
+    background-color: #F4F4F4;
+}
+.plateDetailMain{
+    width: 1100px;
+    height: 1360px;
+    margin: 0px auto;
+    padding: 0px 50px;
+}
+.plateDetailCon{
+    width: 1000px;
+    height: 340px;
+    padding:20px 30px;
+    background-color: #fff;
+    position: relative;
+    top:-20px;
+    padding: 25px 30px;
+}
+.plateDetailCon h2{
+    color:#000;
+    font-size: 18px;
+    font-weight: normal;
+    margin-top: 0px;
+    height: 32px;
+    line-height: 32px;
+    text-indent: 26px;
+}
+.plateDetailCon hr{
+    margin-top: 0px;
+    border-color: #CDCECE;
+}
+.plateDetailtext{
+    width: 940px;
+    height: 240px;
+    border: 1px solid #CDCECE;
+}
+.plateDetailtext{
+    font-size: 14px;
+}
+.plateDetailtext h2{
+    height: 46px;
+    line-height: 46px;
+    text-indent: 26px;
+    margin-bottom: 0px;
+}
+ul.text>li{
+    height: 24px;
+    margin-bottom: 12px;
+    line-height: 24px;
+    padding-left: 26px;
+}
+.w157{
+    width: 170px;
+}
+.w136{
+    width: 136px;
+}
+.w146{
+    width: 146px;
+}
+ul.text>li li{
+    float: left;
+}
+div.text{
+    width: 465px;
+    height: 145px;
+    float: left;
+}
+div.notice{
+    width: 472px;
+    height: 145px;
+    float: left;
+    border-left: 1px solid  #CDCECE;
+    position: relative;
+}
+.safe,.client{
+    height: 145px;
+    float: left;
+}
+.safe{
+    width: 276px;
+    padding-left: 26px;
+}
+.client{
+    width: 168px;
+}
+.currentDetail{
+    width: 421px;
+    height: 48px;
+    background-color: #F4F4F4;
+    line-height: 48px;
+    position: relative;
+    margin-left: 26px;
+    bottom: 10px;
+    clear: both;
+}
+.currentDetail p{
+    width: 33px;
+    height: 17px;
+    background-color: #4EC0EC;
+    position: absolute;
+    line-height: 17px;
+    color: #fff;
+    top: 16px;
+    left: -7px;
+}
+.currentDetail ul li{
+    float: left;
+}
+.ml54{
+    margin-left: 44px;
+}
+.ml26{
+    margin-left: 26px;
+}
+.ml17{
+    margin-left: 17px;
+}
+.client p:last-child{
+    width: 100px;
+    height: 20px;
+    background-color: #4EC0EC;
+    border-radius: 5px;
+    color: #fff;
+    padding-left: 2px;
+}
+.plateTrendCon{
+    width: 1000px;
+    padding:20px 30px;
+    background-color: #fff;
+    margin-top: 10px;
+}
+.plateTrendCon h2{
+    height: 18px;
+    text-indent: 26px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    margin-top: 0px;
+ }
+.plateTrendCon hr{
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.plateTrendCon>div{
+    width: 940px;
+    height: 90px;
+    border: 1px solid #CDCECE;
+    background-color: #CDCECE;
+}
+.plateDetailMain .nav {
+    min-width: inherit;
+    height: 51px;
+}

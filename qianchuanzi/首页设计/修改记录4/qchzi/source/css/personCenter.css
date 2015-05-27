@@ -1,0 +1,427 @@
+.userCenter{
+    background-color: #F4F4F4;
+}
+.userCenterMain{
+    width: 1100px;
+    margin: 0px auto;
+    padding: 0px 50px;
+    position: relative;
+    top: -20px;
+}
+.userCenterCon{
+    border-left:1px solid #CFD0D0;
+    border-right: 1px solid #CFD0D0;
+    background-color: #fff;
+    overflow: hidden;
+}
+.userMenu{
+    float: left;
+    width: 150px;
+    background-color: #fff;
+    min-height: 760px;
+}
+.userMenu{
+  font-size: 14px;
+}
+.userMenu ul{
+    padding-top: 10px;
+    background-color: #F4F4F4;
+}
+.userMenu ul li{
+  background-color: #fff;
+  padding-left: 32px;
+  height: 30px;
+  line-height: 30px;
+}
+.userMenu ul li a{
+    color: #444;
+}
+.userMenu ul li:hover{
+    background-color: #C4E9F7;
+}
+.userMenu ul li:active{
+    background-color: #4EC0EC;
+}
+.s
+elect {
+  background-color:#4EC0EC;
+}
+
+.userMenu ul li:active a{
+    color: #fff;
+}
+.userMenu ul p{
+  padding-left: 16px;
+    float: none;
+}
+.content{
+    float: left;
+    border-left:1px solid #CFD0D0;
+    padding: 30px 28px;
+    font-size: 14px;
+    background-color: #F4F4F4;
+    min-height: 760px;
+}
+.content .white{
+    width: 790px;
+    overflow: hidden;
+    border-radius: 8px;
+    padding: 10px 25px;
+    height: 675px;
+}
+.profitTotal,.profitDay{
+  background-color: #fff;
+}
+.profitTotal{
+  overflow: hidden;
+  width: 790px;
+  height: 100px;
+  border-radius: 8px;
+  padding: 20px 25px;
+}
+.profitTotal ul{
+ float: left;
+    padding-left: 10px;
+    width: 25%;
+}
+.profitTotal ul li{
+    height: 32px;
+    line-height: 32px;
+}
+.profitDay{
+	overflow: hidden;
+	width: 790px;
+    padding: 9px 25px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.profitDay h5{
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #D7D8D8;
+    padding-left: 10px;
+}
+.tableTop{
+    height: 41px;
+    line-height: 41px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.tableTop>div{
+    float: left;
+    margin-right: 25px;
+}
+.form_datetime{
+    display: inline;
+}
+.dateSelect input{
+    border: 1px solid #D7D8D8;
+    width: 137px;
+    padding: 0px 8px;
+}
+.table tr{
+    border-top:1px solid #D7D8D8;
+}
+thead{
+    background-color: #F4F4F4;
+}
+thead th,td{
+    font-weight: normal;
+    text-indent: 2px;
+    height: 30px;
+}
+/*personnalInfo 账户总览*/
+.personInfoCon{
+    padding: 40px 53px 40px 45px;
+    overflow: hidden;
+}
+.baseInfo{
+    overflow: hidden;
+    line-height: 31px;
+    margin-top: 5px;
+}
+.icons.icon-headPortrait{
+    border: 1px solid #9E9E9E;
+    margin-right: 6px;
+}
+.personInfo{
+    overflow: hidden;
+    float: left;
+}
+.personInfo div,p{
+    float: left;
+}
+.personProfit{
+    overflow: hidden;
+    float: right;
+}
+.personProfit ul{
+    float: left;
+    margin-right: 30px;
+}
+p.identity{
+    margin-left: 20px;
+    margin-top: 25px;
+}
+p.identity span{
+    margin-right: 27px;
+}
+.accountInfo{
+    overflow: hidden;
+    margin-top: 41px;
+    margin-bottom: 30px;
+}
+.accList{
+    overflow: hidden;
+    height: 72px;
+    padding: 5px 0px;
+    float: left;
+    margin-left: -16px;
+}
+.accList ul{
+    float: left;
+    border-right: 1px solid #D0D1D1;
+    padding: 0px 22px;
+}
+.accList ul:last-child{
+    border-right: 0px;
+}
+.accList ul li{
+    line-height: 32px;
+    height: 30px;
+}
+.w118{width: 118px;display: inline-block;}
+.accButton{
+    float: right;
+    margin-top: 35px;
+}
+.accButton a{
+    display: block;
+    padding: 1px 10px;
+    height: 32px;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 32px;
+    color: #444;
+    float: left;
+    margin-right: 30px;
+}
+.personInfoCon hr{
+    margin: 0px;
+    border:1px solid #D7D8D8;
+
+}
+.chart{
+    overflow: hidden;
+    padding-left: 5px;
+}
+.chart p{
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+    float: none;
+    margin: 0px;
+}
+.chart div{
+    width: 710px;
+    height: 110px;
+    background-color: #F4F4F4;
+}
+/*autoExchange 自动交易*/
+.tableTop a{
+    display: inline-block;
+    padding: 0px 5px;
+    color: #444;
+}
+.tableTop a:hover{
+    background-color:#C4E9F7;
+}
+.tableTop a:active{
+    background-color: #4EC0EC;
+}
+.tableTop.lh20 div{
+    padding-top: 10px;
+}
+/*withdrawalCon提现====*/
+.withdrawalCon table a{
+    display: inline-block;
+    margin-right: 5px;
+}
+.withdrawalNum{
+    overflow: hidden;
+    width: 100%;
+
+}
+.withdrawalNum p{
+    width: 100%;
+    line-height: 34px;
+    margin: 0px;
+}
+.addBankCard input{
+    width: 160px;
+    height: 30px;
+    margin-left: 3px;
+    font-weight: normal;
+
+}
+.withdrawalNum input{
+    border: 1px solid #D7D8D8;
+    margin-right: 5px;
+}
+.withdrawalCon .button a{
+    display: block;
+    width: 211px;
+    height: 32px;
+    color: #fff;
+    background-color: #F77151;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 32px;
+    margin: 34px 0px 28px 0px;
+}
+.tips p{
+    width: 100%;
+}
+.addBank{
+    height: 58px;
+    line-height: 58px;
+}
+.w74{width: 74px;}
+.w250{width: 250px !important;}
+.w115{width: 115px !important;}
+.w410{width: 410px !important;}
+.addBankCard .accButton{
+    float: none;
+    margin-top: 0px;
+    padding-left: 82px;
+}
+/*identityMan====认证管理*/
+div.identity{
+    padding-left: 10px;
+    width: 740px;
+}
+ul.tab{
+    height: 33px;
+    border-bottom: 1px solid #D5D6D6;
+    margin-top: 20px;
+}
+ul.tab li{
+    float: left;
+    width: 102px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: #444;
+    background-color: #F4F4F4;
+    border-right: 1px solid #fff;
+}
+ul.tab li:hover{
+    color: #fff;
+    background-color: #4EC0EC;
+}
+ul.tab li:active{
+    color: #fff;
+    background-color: #4EC0EC;
+}
+.content h4{
+    font-size: 16px;
+    margin-top: 0px;
+    line-height: 26px;
+    border-bottom: 1px solid #D5D6D6;
+    padding-left: 10px;
+}
+.identity ul{
+    margin-top: 27px;
+    margin-bottom: 32px;
+}
+.identity li{
+    line-height: 30px;
+}
+.identity h5{
+    border-bottom: 1px solid #D5D6D6;
+    height: 26px;
+    margin-bottom: 37px;
+}
+.identity input,select{
+    width: 160px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+.form.button a{
+    display: block;
+    width: 121px;
+    height: 31px;
+    line-height: 31px;
+    background-color: #F77151;
+    color: #fff;
+    border-radius: 6px;
+    text-align: center;
+}
+.ml62{margin-left: 62px;}
+.idenPass p{
+    height: 28px;
+    line-height: 28px;
+    width: 100%;
+}
+.idenPass p label{
+    font-weight: normal;
+}
+.idenPass .icon-done{
+    position: inherit;
+     bottom: 0px;
+     left: 0px;
+}
+/*bankCardManage======银行卡认证*/
+/*personInfoMan======个人信息挂历*/
+.personInfoManCon label{
+    display: inline-block;
+    width: 80px;
+    font-weight: normal;
+}
+.personInfoManCon input,select{
+    width: 160px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+.ml84{margin-left: 84px;}
+
+/*setPwdQuestion*/
+.setPwdQuestionCon input,select{
+    width: 160px;
+    height: 30px;
+    margin-bottom: 15px;
+}
+.setPwdQuestionCon label{
+    display: inline-block;
+    width: 80px;
+    font-weight: normal;
+}
+/*账户充值 recharge*/
+.rechargeCon{
+    padding: 31px 32px 40px 27px;
+    overflow: hidden;
+}
+.rechargeCon hr{
+    margin: 10px 0px;
+}
+.cardName{
+    width: 808px;
+}
+.cardName span{
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #D5D6D6;
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 13px 0px 10px;
+}
+.money input{
+    width: 142px;
+    height: 30px;
+    margin-right: 3px;
+}
+.money p{
+    line-height: 30px;
+}

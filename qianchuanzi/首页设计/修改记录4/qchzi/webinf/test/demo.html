@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>导航tab，缓慢弹出下拉效果 透明度渐隐渐现</title>
+
+  <link type="text/css" href="style.css" rel="stylesheet">
+  <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+
+</head>
+<body>
+
+<div class="nav_menu">
+<div class="nav">
+<div class="list" id="navlist">
+  <ul id="navfouce">
+    <li><a href="http://www.phpjz.cn/" class="now">公司概况</a></li>
+    <li><a href="http://www.phpjz.cn/" class="">产品展示</a></li>
+    <li><a href="http://www.phpjz.cn/" class="">新闻动态</a></li>
+    <li><a href="http://www.phpjz.cn/" class="">营销网络</a></li>
+    <li><a href="http://www.phpjz.cn/" class="">照明知识</a></li>
+    <li><a href="http://www.phpjz.cn/" class="">人力资源</a></li>
+    <li><a href="http://www.phpjz.cn/" class="">客服中心</a></li>
+    <li><a href="http://www.phpjz.cn/" class="">联系我们</a></li>
+  </ul>
+</div>
+
+<div class="box" id="navbox" style="height: 0px; opacity: 0; overflow: hidden;">
+<div class="cont" style="display: block;">
+  <ul class="sublist clearfix">
+    <li>
+      <h3 class="mcate-item-hd"><span>服饰内衣</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>鞋 箱包</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>珠宝、手表</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>化妆品</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>运动 户外</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>手机 数码</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>家用电器</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>家具 建材</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>家纺 居家</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>食品</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>医药保健</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>母婴用品</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>汽车 配件</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>文化 玩乐</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+  </ul>
+</div>
+<div class="cont" style="display: none;">
+  <ul class="sublist clearfix">
+    <li>
+      <h3 class="mcate-item-hd"><span>服饰内衣</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>鞋 箱包</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>珠宝、手表</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>化妆品</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>运动 户外</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>手机 数码</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>家用电器</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>家具 建材</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>家纺 居家</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>食品</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+  </ul>
+</div>
+<div class="cont" style="display: none;">
+  <ul class="sublist clearfix">
+    <li>
+      <h3 class="mcate-item-hd"><span>服饰内衣</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>鞋 箱包</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>珠宝、手表</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>化妆品</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+    <li>
+      <h3 class="mcate-item-hd"><span>运动 户外</span></h3>
+      <p class="mcate-item-bd">
+        <a href="http://www.phpjz.cn">女装</a>
+        <a href="http://www.phpjz.cn">男装</a>
+        <a href="http://www.phpjz.cn">内衣</a>
+        <a href="http://www.phpjz.cn">家居服</a>
+        <a href="http://www.phpjz.cn">配件</a>
+        <a href="http://www.phpjz.cn">羽绒</a>
+        <a href="http://www.phpjz.cn">呢大衣</a>
+        <a href="http://www.phpjz.cn">毛衣</a>
+      </p>
+    </li>
+  </ul>
+</div>
+<div class="cont" style="display: none;">3<br>3</div>
+<div class="cont" style="display: none;">4<br>3<br>4</div>
+<div class="cont" style="display: none;">5</div>
+<div class="cont" style="display: none;">6<br>3<br>3</div>
+<div class="cont" style="display: none;">7<br>3<br>3<br>3</div>
+</div>
+</div>
+</div>
+
+<script type="text/javascript">
+  (function(){
+
+    var time = null;
+    var list = $("#navlist");
+    var box = $("#navbox");
+    var lista = list.find("a");
+
+    for(var i=0,j=lista.length;i<j;i++){
+      if(lista[i].className == "now"){
+        var olda = i;
+      }
+    }
+
+    var box_show = function(hei){
+      box.stop().animate({
+        height:hei,
+        opacity:1
+      },400);
+    }
+
+    var box_hide = function(){
+      box.stop().animate({
+        height:0,
+        opacity:0
+      },400);
+    }
+
+    lista.hover(function(){
+      lista.removeClass("now");
+      $(this).addClass("now");
+      clearTimeout(time);
+      var index = list.find("a").index($(this));
+      box.find(".cont").hide().eq(index).show();
+      var _height = box.find(".cont").eq(index).height()+54;
+      box_show(_height)
+    },function(){
+      time = setTimeout(function(){
+        box.find(".cont").hide();
+        box_hide();
+      },50);
+      lista.removeClass("now");
+      lista.eq(olda).addClass("now");
+    });
+
+    box.find(".cont").hover(function(){
+      var _index = box.find(".cont").index($(this));
+      lista.removeClass("now");
+      lista.eq(_index).addClass("now");
+      clearTimeout(time);
+      $(this).show();
+      var _height = $(this).height()+54;
+      box_show(_height);
+    },function(){
+      time = setTimeout(function(){
+        $(this).hide();
+        box_hide();
+      },50);
+      lista.removeClass("now");
+      lista.eq(olda).addClass("now");
+    });
+
+  })();
+</script>
+
+
+</body></html>

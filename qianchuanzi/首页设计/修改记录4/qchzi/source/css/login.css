@@ -1,0 +1,170 @@
+.login{
+  height: 620px;
+  background-color: #F4F4F4;
+}
+.loginMain{
+  width: 1100px;
+  height: 640px;
+  margin: 0px auto;
+  padding: 0px 50px;
+  position: relative;
+  top: -20px;
+}
+.loginCon{
+  width: 1000px;
+  height: 640px;
+  padding:35px 20px 65px 20px;
+  background-color: #fff;
+}
+.loginForm{
+  width: 620px;
+  height: 100%;
+  padding-left: 40px;
+    font-size: 14px;
+    display: block;
+    float: left;
+}
+.loginLink{
+  width: 340px;
+  height: 100%;
+  border-left: 2px solid #DBDBDB;
+  padding-left: 20px;
+  margin-top: 10px;
+    float: left;
+}
+.loginForm h5{
+    color: #3AC2FB;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.loginForm p{
+    color: #444444;
+    margin-bottom: 30px;
+}
+.loginForm input{
+    width: 322px;
+    height: 42px;
+    border:1px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 12px 5px;
+    margin-bottom: 0px;
+}
+.loginForm input[type="checkbox"]{
+    width: 14px;
+    height: 14px;
+}
+.rememberPwd{
+    margin-bottom: 10px;
+}
+.rememberPwd>div{
+    display: inline-block;
+}
+.rememberPwd a{
+    color: #3AC2FB;
+    margin-left: 180px;
+}
+
+.but-login,.but-register{
+    width: 322px;
+    height: 46px;
+    background-color: #4EC0EC;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+}
+.but-register{
+    width: 216px;
+}
+.but-wblog,.but-qq{
+    width: 216px;
+    height: 46px;
+    background-color:#F77151;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+.loginLink p {
+  font-size: 16px;
+  color: #444444;
+}
+.tex1,.tex2{
+    margin-bottom: 30px;
+}
+.tex2{
+    margin-top: 45px;
+}
+/*注册css*/
+[class|= "registerText"]{
+  border-bottom: 1px solid #E5E5E5;
+}
+[class|= "registerText"] li{
+  font-size: 13px;
+  color: #444444;
+}
+.registerText-1{
+  height: 100px;
+}
+.registerText-2{
+  height: 220px;
+  padding-top: 15px;
+}
+.registerText-3{
+  padding-top: 15px;
+  border: 0px;
+}
+.registerText-1 li.more{
+  color: #3AC2FB;
+  text-align: right;
+}
+.acceptProl>div{
+  display: inline-block;
+}
+.acceptProl a{
+  color: #3AC2FB;
+  margin-left: 5px;
+}
+.registerForm label{
+  color:#444;
+  width: 322px;
+  font-weight: normal;
+  margin-bottom: 7px;
+}
+.registerForm>div{
+  width: 322px;
+  margin-bottom: 15px;
+    float: left;
+}
+div.invitationCode,div.acceptProl{
+  margin-bottom: 0px;
+}
+div.identifyCode{
+  margin-bottom: 15px;
+}
+.identifyCode input{
+  width: 160px;
+  float: left;
+  display: inline-block;
+}
+.identifyCode .identifyImg{
+  width: 130px;
+  height: 42px;
+  border: 2px solid #F4F4F4;
+  display: block;
+  margin-left: 28px;
+  float: left;
+}
+span.prompt{
+  float: left;
+  width: 215px;
+  margin-left: 18px;
+  margin-top: 38px;
+    display: none;
+}
+.acceptProl label{
+  width: 120px;
+}
+.invitationCode span.spec{
+  color: #D5D4D3;
+  font-size: 12px;
+}

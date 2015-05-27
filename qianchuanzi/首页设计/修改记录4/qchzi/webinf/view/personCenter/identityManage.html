@@ -1,0 +1,154 @@
+<div class="identityManCon content">
+    <div class="white">
+        <h4>认证管理</h4>
+        <ul class="tab">
+            <li data-role="IDIdentity">身份认证</li>
+            <li data-role="PhoneIdentity">手机认证</li>
+            <li data-role="EmailIdentity">邮箱认证</li>
+        </ul>
+        <div id="IDIdentity" class="identity dNone">
+            <ul>
+                <li>1.身份认证(直接对接全国公民身份信息系统)</li>
+                <li>2.身份认证(直接对接全国公民身份信息系统)</li>
+                <li>3.身份认证(直接对接全国公民身份信息系统)</li>
+            </ul>
+            <h5>认证信息</h5>
+            <form class="idIdentityForm" action="">
+                <span class="Validform_checktip"></span>
+                <div>
+                    <lable>真实姓名:</lable>
+                    <input type="text" nullmsg="请输入中文名！" datatype="z2-4" errormsg="中文名为2~4个中文字符！"/>
+                    <span class="Validform_checktip"></span>
+                </div>
+                <div>
+                    <lable>证件类型:</lable>
+                    <select name="" id="">
+                        <option value="IDCard">身份证</option>
+                        <option value="">军官证</option>
+                        <option value="">房产证</option>
+                    </select>
+                </div>
+                <div>
+                    <lable>证件号码:</lable>
+                    <input type="text" datatype="idcard" nullmsg="请输入18位的有效身份证信息！" errormsg="您输入的身份证信息不正确!"/>
+                    <span class="Validform_checktip"></span>
+                </div>
+                <div class="button ml62 form"><a href="">点击验证</a></div>
+            </form>
+        </div>
+        <div id="PhoneIdentity" class="identity dNone">
+            <ul>
+                <li>1.手机认证目前免费，请用户尽早进行认证。</li>
+                <li>2.目前手机认证支持中国移动、联通和电信的手机号码。验证码一般在10分钟内发送到您的手机上。</li>
+                <li>3.请不要重复点击“获取验证码”;如果超过10分钟，您还未收到验证码，请试试语音验证码，接通语音电话后，语音验证码自动提示3次，请根据语音提示输入验证码。 </li>
+            </ul>
+            <h5>认证信息</h5>
+            <form class="phoneForm" action="">
+                <div>
+                    <lable>手机号码:</lable>
+                    <input type="text" datatype="m" errormsg="请输入正确的手机号"/>
+                    <div class="button dline ml10 form"><a class="blue-bg" href="">获取验证码</a></div>
+                    <span class="Validform_checktip"></span>
+                </div>
+                <div>
+                    <lable>验&ensp;证&ensp;码:</lable>
+                    <input type="text"/>
+                    <div class="button dline ml10 form"><a href="">点击验证</a></div>
+                </div>
+            </form>
+        </div>
+        <div id="EmailIdentity" class="identity">
+            <ul>
+                <li>1.请前往您所填写的邮箱，查收邮件，点击确认链接，完成邮件认证。</li>
+            </ul>
+            <h5>认证信息</h5>
+            <form class="emailForm" action="">
+                <div>
+                    <lable>我的邮箱:</lable>
+                    <input type="text"  datatype="e" errormsg="请输入正确的邮箱"/>
+                    <div class="button dline ml10 form"><a class="blue-bg" href="">发送邮件</a></div>
+                    <span class="Validform_checktip"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+    $(function(){
+        $(".idIdentityForm").Validform({
+            tiptype:3,
+            datatype:{//传入自定义datatype类型【方式二】;
+                "z2-4" : /^[\u4E00-\u9FA5\uf900-\ufa2d]{2,4}$/,
+                "idcard":function(gets,obj,curform,datatype){
+                    //该方法由佚名网友提供;
+
+                    var Wi = [ 7, 9, 10, 5, 8, 4, 2, 1, 6, 3, 7, 9, 10, 5, 8, 4, 2, 1 ];// 加权因子;
+                    var ValideCode = [ 1, 0, 10, 9, 8, 7, 6, 5, 4, 3, 2 ];// 身份证验证位值，10代表X;
+
+                    if (gets.length == 15) {
+                        return isValidityBrithBy15IdCard(gets);
+                    }else if (gets.length == 18){
+                        var a_idCard = gets.split("");// 得到身份证数组
+                        if (isValidityBrithBy18IdCard(gets)&&isTrueValidateCodeBy18IdCard(a_idCard)) {
+                            return true;
+                        }
+                        return false;
+                    }
+                    return false;
+
+                    function isTrueValidateCodeBy18IdCard(a_idCard) {
+                        var sum = 0; // 声明加权求和变量
+                        if (a_idCard[17].toLowerCase() == 'x') {
+                            a_idCard[17] = 10;// 将最后位为x的验证码替换为10方便后续操作
+                        }
+                        for ( var i = 0; i < 17; i++) {
+                            sum += Wi[i] * a_idCard[i];// 加权求和
+                        }
+                        valCodePosition = sum % 11;// 得到验证码所位置
+                        if (a_idCard[17] == ValideCode[valCodePosition]) {
+                            return true;
+                        }
+                        return false;
+                    }
+
+                    function isValidityBrithBy18IdCard(idCard18){
+                        var year = idCard18.substring(6,10);
+                        var month = idCard18.substring(10,12);
+                        var day = idCard18.substring(12,14);
+                        var temp_date = new Date(year,parseFloat(month)-1,parseFloat(day));
+                        // 这里用getFullYear()获取年份，避免千年虫问题
+                        if(temp_date.getFullYear()!=parseFloat(year) || temp_date.getMonth()!=parseFloat(month)-1 || temp_date.getDate()!=parseFloat(day)){
+                            return false;
+                        }
+                        return true;
+                    }
+
+                    function isValidityBrithBy15IdCard(idCard15){
+                        var year =  idCard15.substring(6,8);
+                        var month = idCard15.substring(8,10);
+                        var day = idCard15.substring(10,12);
+                        var temp_date = new Date(year,parseFloat(month)-1,parseFloat(day));
+                        // 对于老身份证中的你年龄则不需考虑千年虫问题而使用getYear()方法
+                        if(temp_date.getYear()!=parseFloat(year) || temp_date.getMonth()!=parseFloat(month)-1 || temp_date.getDate()!=parseFloat(day)){
+                            return false;
+                        }
+                        return true;
+                    }
+
+                }
+
+            },
+            beforeSubmit:function(curform){
+                //在验证成功后，表单提交前执行的函数，curform参数是当前表单对象。
+                //这里明确return false的话表单将不会提交;
+            }
+
+        });
+        $('.phoneForm').Validform({
+            tiptype:3
+        });
+        $('.emailForm').Validform({
+            tiptype:3
+        });
+    });
+</script>

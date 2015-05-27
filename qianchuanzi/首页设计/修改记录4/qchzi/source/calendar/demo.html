@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>日期选择器</title>
+
+<style type="text/css">
+.labCalendar{
+	height:12px;
+	width:80px;
+	display:block;
+	border:1px solid #ff9900;
+	background-color:#fff0e1;
+	padding:5px 5px 2px 5px;/* 定位顺序 Top right bottom left */
+	font-size:12px;
+	font-weight:bold;
+}
+.labCalendar:hover{
+	height:12px;
+	width:80px;
+	display:block;
+	border:1px solid #ff9900;
+	background-color:#ffdcb9;
+	padding:5px 5px 2px 5px;/* 定位顺序 Top right bottom left */
+	font-size:12px;
+	font-weight:bold;
+}
+</style>
+</head>
+
+<!--必要样式-->
+<link rel="stylesheet" href="css/calendar.css" />
+<script type="text/javascript" src="js/calendar.js"></script>
+
+
+<body style="background-color:#deefff">
+
+
+<br><br><br><br><br><br>
+
+<div>
+	<center>
+	<p style="font-size:25pt;font-weight:bold;color:red;">文本框调用日历</p>
+	
+	
+	日期:&nbsp;<input name="lable" onFocus="setday(this);" size="9" maxlength="10" style="border:1px solid #ff9900;background-color:#fff0e1" readonly>
+	
+	
+	<br><br><br>
+	
+	
+	<p style="font-size:25pt;font-weight:bold;color:red;">div、label... 调用日历</p>
+	
+	日期:&nbsp;<label Author="meizz" class="labCalendar" onClick="setday(this);" onselectstart="return false;" style="display:inline-block;">&nbsp;</label>
+	
+	</center>
+</div>
+
+</body>
+</html>

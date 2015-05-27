@@ -1,0 +1,376 @@
+<html><head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="shortcut icon" type="image/x-icon" href="../../../source/images/favicon.ico" media="screen" />
+    <title></title>
+    <link rel="stylesheet" href="../../../source/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../source/css/global.css">
+    <link rel="stylesheet" href="../../../source/css/personCenter.css">
+    <link rel="stylesheet" href="../../../source/css/validform.css">
+    <link href="../../../source/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="../../../source/css/chongzhi.css">
+    <link rel="stylesheet" href="../../../source/css/recharge.css">
+	
+    <script src="../../../source/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="../../../source/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../../../source/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../../../source/js/validform-5.3.2.js" charset="UTF-8"></script>
+    <script src="../../../source/js/highcharts.js" type="text/javascript"></script>
+	<script src="../../../source/js/highchartsmore.js" type="text/javascript"></script>
+    <script src="../../../source/js/draw.js" type="text/javascript"></script>
+</head>
+
+
+
+<body><div class="header">
+  <div class="top">
+    <div class="topMain">
+      <div class="top_logo"><a href="/index.html"><img src="../../../source/images/logo.png" height="60px"></a></div>
+      <div style="width:100%; height:30px; line-height:30px; text-align:right;">
+          <span>客服电话：400-900-9888</span>
+      </div>
+      <div style="width:100%; height:30px;">
+      	<div class="topCon">
+            <div class="share">
+              <span class="icons icon-WeChat"></span><span class="icons icon-MicroBlog"></span>
+            </div>
+            <div class="topEnter">
+            	<span><a href="/login.html">我的账号</a></span>
+          		<span><a href="/logout.html">安全退出</a></span>
+          		<span class="brokenBar">|</span> 
+                <span>帮助中心</span>
+            </div>
+            <div class="topLogin">
+              <span>您好！欢迎来到钱串子！</span>
+            </div>
+      	</div>
+      </div>
+    </div>
+  </div>
+  <div class="nav">
+    <div class="navMain">
+      <div class="navCon">
+        <div class="nav-tab">
+          <a class="nav-tab" href="/index.html">首&emsp;页</a>
+          <a class="nav-tab">我要投资</a>
+          <a class="nav-tab">我的账户</a>
+          <a class="nav-tab">论&emsp;坛</a>
+          <a class="nav-tab">帮&emsp;助</a>
+          <a class="nav-tab" href="/about/brief.html">关于我们</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+    <div class="userCenter">
+        <div class="userCenterMain">
+            <div class="userCenterCon">
+            
+                <div class="userMenu">
+                    <ul>
+                        <p>我的账户</p>
+                        <li class="subMenu" id="index" style="background:#4EC0EC;"><a class="subMenu" href="/user/wealth.html">账户总览</a></li>
+                        <li class="subMenu" id="profit"><a class="subMenu" href="/user/profit.html">我的收益</a>
+                        </li><li class="subMenu" id="auto_trade"><a class="subMenu" href="/user/autotrade.html">自动交易记录</a></li>
+                        <li class="subMenu" id="opera"><a class="subMenu" href="/user/operation_record.html">账户操作记录</a></li>
+                        <li class="subMenu" id="withdraw"><a class="subMenu" href="/user/withdraw.html"> 提现申请</a></li>
+                    </ul>
+                    <ul>
+                        <p>我的资料</p>
+                        <li class="subMenu" id="valify"><a class="subMenu" href="/user/identity_manage.html">认证管理</a></li>
+                        <li class="subMenu" id="bankcard"><a class="subMenu" href="/user/bankcard_manage.html">银行卡管理</a></li>
+                        <li class="subMenu" id="info"><a class="subMenu" href="/user/person_info.html">个人信息管理</a></li>
+                    </ul>
+                    <ul>
+                        <p>安全中心</p>
+                        <li class="subMenu" id="reset_login_pass"><a class="subMenu" href="/user/modify_pass.html">重置登录密码</a> </li>
+                        <li class="subMenu" id="set_pass_pro"><a class="subMenu" href="/user/setPwdQuestion.html">设置密保问题</a></li>
+                        <li class="subMenu"><a class="subMenu" id="reset_trade_pass" href="/user/reset_trade_pwd.html">重置交易密码</a></li>
+                    </ul>
+                    <hr>
+                    <p class="identity" style="margin-top:-15px;">
+                        <span class="icons icon-identityIDCard pos-rel" style="margin-right:5px;" title="已通过实名认证"><span class="icons icon-done"></span></span>
+                        <span class="icons icon-identityPhone pos-rel" style="margin-right:5px;" title="已绑定手机号"><span class="icons icon-done"></span></span>
+                        <span class="icons icon-identityBankCard pos-rel" style="margin-right:5px;" title="已绑定银行卡"><span class="icons icon-done"></span></span>
+                    </p>
+                </div>
+                
+                <div class="withdrawalCon content">
+                    <div class="white">
+                        <form id="withdraw-form" action="/user/saveWithdraw.json" method="post">
+                            <div>申请提现</div>
+                            <script>
+                            function changebg(m)
+							{
+								if(m==1)
+								{
+									$("#addcade").attr("style","background-color:#ee6343;");
+									$("#addtext").attr("style","color:#FFF;");
+								}else if(m==2)
+								{
+									$("#addcade").attr("style","background-color:#e0e0e0;")
+									$("#addtext").attr("style","color:#000;");
+								}
+							}
+							function selectedcard(id)
+							{
+								var cardclass = $("#cardselect"+id).attr("class");
+								if(id==1)
+								{
+									if(cardclass.indexOf("selected") > 0 )
+									{
+										$("#cardselect"+id).removeClass("selected");
+										$("#bc-img"+id).html("");
+									}else
+									{
+										$("#cardselect"+id).addClass("selected");
+										$("#bc-img"+id).html("<img class=\"bc-img\" src=\"../../../source/images/selected_green.png\" />");
+										$("#cardselect2").removeClass("selected");
+										$("#bc-img2").html("");
+									}
+								}else if(id==2)
+								{
+									if(cardclass.indexOf("selected") > 0 )
+									{
+										$("#cardselect"+id).removeClass("selected");
+										$("#bc-img"+id).html("");
+									}else
+									{
+										$("#cardselect"+id).addClass("selected");
+										$("#bc-img"+id).html("<img class=\"bc-img\" src=\"../../../source/images/selected_green.png\" />");
+										$("#cardselect1").removeClass("selected");
+										$("#bc-img1").html("");
+									}
+								}
+								
+							}
+							function updates()
+							{	
+								alert("update");
+							}
+							function deletes()
+							{	
+								alert("delete");
+							}
+                            </script>
+                            <div class="bankcards">
+                            	<div class="bc-row">
+                                	<div class="bc-row-img selected" id="cardselect1" onClick="selectedcard(1)">
+                                		<div class="bc-img-icbc-nw" id="bc-img1"><img class="bc-img" src="../../../source/images/selected_green.png" /></div>
+                                    </div>
+                                    <div class="bc-num">
+                                    	<span class="code" style="margin-left: 5px;"> **** **** **** 5712</span>　
+                                        <a href="javascript:deletes()" class="remove" id="24457" name="jianhang" style="margin-right: 5px;">删除</a>
+	                                    <a href="javascript:updates()" class="update" id="24457" name="jianhang" style="">修改</a>
+                                    </div>
+                                </div>
+                                <div class="bc-row">
+                                	<div class="bc-row-img" id="cardselect2" onClick="selectedcard(2)">
+                                		<div class="bc-img-ccb-nw" id="bc-img2"></div>
+                                    </div>
+                                    <div class="bc-num">
+                                    	<span class="code" style="margin-left: 5px;"> **** **** **** 5712</span>　
+                                        <a href="javascript:deletes()" class="remove" id="24457" name="jianhang" style="margin-right: 5px;">删除</a>
+	                                    <a href="javascript:updates()" class="update" id="24457" name="jianhang" style="">修改</a>
+                                    </div>
+                                </div>
+                                <div id="addcade" class="bc-row2" onMouseOver="changebg(1)" onMouseOut="changebg(2)">
+                                	<div class="bc-add-img"><img width="40" height="40" src="../../../source/images/forbid_metal.jpg"/></div>
+                                    <div class="bc-add-text" id="addtext">添加银行卡</div>
+                                </div>
+                            </div>
+                            <!--<p class="addBank" data-toggle="modal" data-target="#addBankCard" style="clear:both;"><a>添加银行卡账号</a></p>-->
+                            <div class="withdrawalNum">
+                                <p>
+                                    <lable>可&nbsp;提&nbsp;现&nbsp;总&nbsp;额：</lable>
+                                    <span id="upperWithdraw">
+                                    5.00元
+                                    </span>
+                                    <input type="hidden" name="upperAmount" value="10000">
+                                </p>
+                
+                                <p>
+                                    <lable>本次提现金额：</lable>
+                                    <input type="text" name="withdrawAmount" onBlur="CheckInputIntFloat(this);"><span>元</span>
+                                </p>
+                                
+                                <p>
+                                    <lable>提现手续费：</lable>
+                                    <span id="upperWithdraw">2元</span>
+                                </p>
+                                <p>
+                                    <lable>预计到账金额：</lable>
+                                    0.00
+                                    <span id="upperWithdraw">
+                                    </span>
+                                                   元
+                                </p>
+                                <p>
+                                    <lable>预计到账时间：</lable>
+                                    <span>1-2个工作日(双休日和法定节假日除外)</span>
+                                </p>
+                                <p class="hh_tips">警告：禁止信用卡套现、虚假交易等行为，一经确认，将终止该账户的使用。</p>
+                            </div>
+                            <div class="button"><a onClick="validInput();" href="#">确认提现</a></div>
+                            <div class="button" data-toggle="modal" data-target="#withdrawal" style="display:none;"><a id="sub"></a></div>
+                        </form>
+                        
+                        <div class="hh_tips mb20 clearfix">
+                          温馨提示<br>
+                           1.工作日0:00-15:30的提现在当天提交银行处理，理论上当天可到账，工作日15:30-24:00及非工作日（包括法定节假日）的提现统一在下一个工作日处理；<br>
+                           2.如您的提现在一个工作日之内未到账,请拨客服热线：400-900-9888；<br>
+                           3.请确保您的银行账号的姓名和您的网站上的真实姓名一致；<br>
+                           <!-- 4.系统在钱转到您账号时会发一封站内信通知您；<br> -->
+                           4.每笔提现金额至少为2元以上；<br>
+                           5.每笔提现金额最高不能超过500000元；<br>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+<link rel="stylesheet" href="../../../source/css/foot.css">
+	<!-- <footer> 
+		  <div class="m-foot"> -->
+		  	<div class="fix_width">
+		  		<div class="m-information">
+		  			<div class="about-us">
+		  				<dl>
+		  					<dd>关于我们</dd>
+		  					<dt>
+		  						<a href="/about/brief.html">公司简介</a>
+		  					</dt>
+		  					<dt>
+		  						<a href="/about/contact.html">联系我们</a>
+		  					</dt>
+		  					<dt>
+		  						<a href="/about/jobs.html">加入我们</a>
+		  					</dt>
+		  					<dt></dt>
+		  				</dl>
+		  				<dl>
+		  					<dd>关于钱串子</dd>
+		  					<dt>
+		  						<a href="#">平台简介</a>
+		  					</dt>
+		  					<dt>
+		  						<a href="#">平台原理</a>
+		  					</dt>
+		  					<dt>
+		  						<a href="#">费率</a>
+		  					</dt>
+		  					<dt></dt>
+		  				</dl>
+		  				<dl>
+		  					<dd>用户协议</dd>
+		  					<dt>
+		  						<a href="#">政策法规</a>
+		  					</dt>
+		  					<dt>
+		  						<a href="#">隐私保护</a>
+		  					</dt>
+		  					<dt>
+		  						<a href="#">免责条款</a>
+		  					</dt>
+		  					<dt></dt>
+		  				</dl>
+		  				<dl>
+		  					<dd>常见问题</dd>
+		  					<dt>
+		  						<a href="#">投资人必读</a>
+		  					</dt>
+		  					<dt>
+		  						<a href="#">充值提现必读</a>
+		  					</dt>
+		  					<dt></dt>
+		  				</dl>
+		  			</div>
+		  			<div class="m-information-left">
+		  				<div class="hotline">
+		  					<h3 style="text-align:left;">客服热线</h3>
+		  					<p class="f24">400-900-9888</p>
+		  					<p class="f16">
+		  						<span style="line-height:1.5;">周一至周日8:00—20:00</span>
+		  					</p>
+		  				</div>
+		  				<div class="g-weixin">
+		  					<h3>官方微信</h3>
+		  					<p class="g-weixin-bg">
+		  						<img style="display: inline;" src="//static.firstp2p.com/attachment/201401/17/17/52d8f439e3be4.png" class="weixin_img" alt="" data-src="//static.firstp2p.com/attachment/201401/17/17/52d8f439e3be4.png" border="0"></p>
+		  				</div>
+		  			</div>
+		  		</div>
+		  		<div class="g-copyright">
+		  			<p class="pt10">
+		  				@钱串子&nbsp; &nbsp;北京钱串子科技有限责任公司
+		  				<br>		  
+		  				©2014 www.qianczi.com &nbsp;&nbsp;ICP备案：京ICP备15013400号-1&nbsp; &nbsp;网站备案号：京公安网备11010502026080
+		  			</p>
+		  		</div>
+		  	</div>
+		<!--  </div>
+	 </footer> -->
+</div>
+<!-- Modal -->
+<div class="modal fade" id="addBankCard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog z">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">添加银行卡</h4>
+            </div>
+            <div class="modal-body fs14">
+                <p class="w100 mb30"><span class="red">温馨提示：</span>提现资金仅能转至本人名下的银行卡。禁止套现、洗钱行为。</p>
+
+                <form class="addBankCard" action="">
+                    <div>
+                        <label class="fw-no">开&ensp;户&ensp;行:</label>
+                        <select name="" id="">
+                            <option value="">中国工商银行</option>
+                            <option value="">中国工商</option>
+                            <option value="">中国工商</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">请选择省份</option>
+                            <option value="">择省份</option>
+                            <option value="">择省份</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">请选择地区</option>
+                            <option value="">择省份</option>
+                            <option value="">择省份</option>
+                        </select>
+                    </div>
+                    <div><label class="fw-no">开户支行:</label><input class="mb15" type="text"></div>
+                    <div><label class="fw-no">开户姓名:</label><input class="mb15" type="text"></div>
+                    <div><label class="fw-no">银行卡号:</label><input class="mb15" type="number"></div>
+                    <div class="form button ml62"><a href="">确认添加</a></div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+	$(function() {
+		$('.period').click(function(){
+			$a = $(this);
+			$('.period').removeClass('active');
+			$a.addClass('active');
+			var type = $a.attr('name');
+			$('#profit-trend-wrap').empty();
+			drawProfitTrend($('#profit-trend-wrap'),type);
+		});
+		
+		drawInterestTrend($("#interest-trend-wrap"), "week");
+		drawScaleTrend($('#scale-trend'), "week");
+	});
+</script></body></html>

@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+.chongzhi{width:800px;float:left; padding:24px;border-left: 1px solid #CFD0D0;}
+.navtab{ width:100%; height:37px; border-bottom:2px solid #18a7e8;} 
+.navtab ul{width:100%; height:35px; margin-left:-1px;} 
+.navtab ul li{ list-style:none; display:inline-block;width:120px; height:35px;line-height:35px; text-align:center;*float:left;*margin-left:-1px;} 
+.navtab ul li a{ background:#fff;border:1px solid #CCC;border-bottom:0px; text-decoration:none; color:#000; height:35px;display:block;} 
+.navtab ul li a:hover{ background:#CCEDFB} 
+.navtab ul li a.cur{ z-index:9999; color:#FFF; background-color:#18a7e8;}
+
+.container{width:100%; margin:0px; padding:0px;} 
+.sub-con{width:100%;display:none;} 
+.cur-sub-con{ display:block;} 
+.sub-con a{ line-height:40px} 
+.sub-con p{ text-align:center}
+#czjl td{ line-height:25px; background-color:#E9EFF2;}
+.td-bg{background-color:#E9EFF2;}
+.td-border{border-bottom:1px solid #CCC;}
+.td1{width:25%; line-height:25px;}
+.td2{width:15%; line-height:25px;}
+.td3{width:10%; line-height:25px;}
+.td4{width:50%; line-height:25px;}
+
+.bankcards{width:790px; margin:20px 0px;}
+/*
+.bc-row{width:209px; height:138px; border:1px solid #CCC; margin:0px 20px 20px 0px; cursor:hand; float:left;}
+*/
+.bc-row{width:211px; height:140px; margin:0px 20px 20px 0px; cursor:hand; float:left;}
+.bc-row-img{width:209px; height:138px; border:1px solid #CCC;}
+.bc-row2{width:209px; height:138px; margin:0px 20px 20px 0px; float:left; background-color:#e0e0e0;}
+.selected{border:1px solid #38ae64;}
+.bc-img{width:15px; height:14px; margin-top:-26px; position:absolute; margin-left:9px;}
+.bc-num{width:207px; height:44px; margin:-45px 0px 0px 1px; background-color:#e0e0e0; line-height:44px; overflow:hidden;}
+.bc-add-img{width:40pxpx; height:40px; margin:26px 84px;}
+.bc-add-text{width:207px; height:44px; line-height:44px; text-align:center;}
+/*
+.bc-img{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/bank_logo.jpg);}
+*/
+.bc-img-icbc-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/icbc.gif);}
+.bc-img-ccb-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/ccb.gif);}
+.bc-img-cmb-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/cmb.gif);}
+.bc-img-abc-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/abc.gif);}
+.bc-img-hxb-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/hxb.gif);}
+.bc-img-boc-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/boc.gif);}
+.bc-img-comm-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/comm.gif);}
+.bc-img-ceb-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/ceb.gif);}
+.bc-img-spdb-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/spdb.gif);}
+.bc-img-citic-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/citic.gif);}
+.bc-img-psbc-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../imagesbanklogo/psbc.gif);}
+.bc-img-cgb-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/cgb.gif);}
+.bc-img-shb-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/shb.gif);}
+.bc-img-rcb-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/rcb.gif);}
+.bc-img-bccb-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/bccb.gif);}
+.bc-img-bea-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/bea.gif);}
+.bc-img-nbcb-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/nbcb.gif);}
+.bc-img-zsb-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/zsb.gif);}
+.bc-img-hzb-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/hzb.gif);}
+.bc-img-hsb-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/hsb.gif);}
+.bc-img-szpab-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/szpab.gif);}
+.bc-img-cbhb-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/cbhb.gif);}
+.bc-img-cmbc-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/cmbc.gif);}
+.bc-img-cib-nw{width:160px; height:40px; margin:26px 23px; text-align:right; background-image:url(../images/banklogo/cib.gif);}

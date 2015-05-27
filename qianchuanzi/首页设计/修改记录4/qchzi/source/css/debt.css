@@ -1,0 +1,370 @@
+.debt{
+    height:1360px;
+    background-color: #F4F4F4;
+}
+.debtCenterMain{
+    width: 1100px;
+    height: 1360px;
+    margin: 0px auto;
+    padding: 0px 50px;
+}
+.collectCon{
+    width: 1000px;
+    height: 233px;
+    padding:20px 30px;
+    background-color: #fff;
+    position: relative;
+    top:-20px;
+    padding: 25px 30px;
+    color: #fff;
+}
+.collectCon h2{
+    font-size: 18px;
+    line-height: 32px;
+    margin: 0px;
+    color: #676767;
+}
+.collectCon hr{
+    margin-top: 10px;
+    border: 1px solid #D4D5D5;
+}
+.collectCon label,span{
+    display: block;
+}
+.nov,.totalWage{
+    float: left;
+}
+.nov span{
+    width: 120px;
+    height: 70px;
+    font-size: 48px;
+    text-align: center;
+    line-height: 70px;
+}
+.nov label{
+    width: 120px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 30px;
+    text-align: center;
+}
+.totalWage span{
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 70px;
+}
+.totalWage label{
+    width: 200px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+}
+.numper{
+    margin-left: 60px;
+    float: right;
+}
+.numper span{
+    width: 120px;
+    height: 73px;
+    text-align: center;
+    line-height: 73px;
+    font-size: 30px;
+}
+.numper label{
+    width: 120px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 18px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 0px;
+}
+.tabbable{
+    width: 1000px;
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 0px 30px 40px 30px;
+}
+.tabbable>ul{
+    overflow: hidden;
+    padding-left: 30px;
+    border-bottom: 1px solid #CDCECE;
+    margin-bottom: 40px;
+  background-color: #fff;
+}
+.tabbable>ul>li a{
+    width: 100px;
+    height: 51px;
+    line-height: 51px;
+    color: #4D5356;
+    text-align: center;
+    background-color: #A6DFF5;
+  border:0px;
+    border-right: 1px solid #fff;
+    font-size: 18px;
+    padding: 0px;
+    margin-right: 0px;
+  border-radius: 0px;
+}
+.tabbable>ul>li a:hover{
+  background-color: #4EC0EC;
+  color: #fff;
+}
+.tabbable .tab-content{
+    padding: 0px 30px;
+}
+
+.select_ul .list{
+  border: 1px solid #D0D1D1;
+  margin: 0px;
+  padding:0px !important;
+  overflow: hidden;
+}
+.list{
+  border: 1px solid #D0D1D1;
+  margin-top: 27px;
+  padding-top: 25px;
+  padding-left: 25px;
+  overflow: hidden;
+}
+.image{
+  width: 260px;
+  height: 100px;
+  background-color: #BFBFBF;
+  float: left;
+}
+.list{
+  margin-bottom: 40px;
+}
+.list .text{
+  width: 540px;
+  height: 100px;
+  float: left;
+  margin-left: 30px;
+}
+.list .text h4{
+  line-height: 24px;
+  margin-top: 0px;
+  margin-bottom: 7px;
+}
+.list .text label{
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+.list .text span{
+  font-size: 14px;
+  display: inline-block;
+}
+.list .text a{
+  font-size: 14px;
+}
+.list .text ul{
+  float: left;
+}
+.list .text ul li{
+  height: 24px;
+  line-height: 24px;
+}
+.list h5{
+  clear:both;
+  padding-left: 5px;
+  line-height: 42px;
+}
+.platLists .list{
+  padding-bottom: 25px;
+}
+.platLists .list .text{
+  height: 90px;
+  width: 693px;
+}
+.platLists .list .image{
+  width: 130px;
+  height: 90px;
+}
+.platLists .list ul{
+  margin-bottom: 0px;
+}
+.platLists .list ul li{
+  float: left;
+  height: 60px;
+  line-height: 60px;
+}
+.w180{width: 160px;}
+.w240{width: 240px;}
+.w200{width: 190px;}
+.a-spec{
+  text-align: right;
+  width: 45px;
+  display: inline-block;
+}
+.accordion-body{
+  width: 828px;
+  overflow: hidden;
+}
+.detailTotal p{
+  font-size: 14px;
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+.detailTable{
+  font-size: 14px;
+  width: 727px;
+  margin: 0px 50px;
+  margin-bottom: 30px;
+}
+.detailTable tr td{
+  height: 30px;
+}
+/*processBar*/
+.processBar{
+  position: relative;
+  height: 28px;
+  width: 828px;
+}
+.processBar hr{
+  border: 2px solid #F77859;
+  margin: 0px;
+  position: relative;
+  top: 12px;
+}
+.processBar .outterDot{
+  width: 18px;
+  height: 18px;
+  border: 1px solid #4EC0EC;
+  float: left;
+  background-color: #fff;
+  border-radius: 14px;
+  position: relative;
+  margin-right: 72px;
+  top: -0.1px;
+}
+.processBar .outterDot:last-child{
+  margin-right: 0px;
+}
+.processBar .innerDot{
+  width: 12px;
+  height: 12px;
+  border: 1px solid #4EC0EC;
+  background-color: #4EC0EC;
+  border-radius: 11px;
+  position: relative;
+  top: 50%;
+  margin-top: -6px;
+  left: 50%;
+  margin-left: -6px;
+}
+.arrow-modal-box{
+    width: 260px;
+    height: 110px;
+    border: 1px solid #4EC0EC;
+    background-color: #fff;
+    bottom: -98px;;
+    left: 26px;
+    z-index: 10;
+    display: none;
+}
+.arrow{
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent; /* 左边框的宽 */
+    border-right: 7px solid transparent; /* 右边框的宽 */
+    border-bottom: 12px solid #4EC0EC; /* 下边框的长度|高,以及背景色 */
+    font-size: 0;
+    line-height: 0;
+    top: -12px;
+    left: 2px;
+}
+.arrow-inner{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent; /* 左边框的宽 */
+    border-right: 5px solid transparent; /* 右边框的宽 */
+    border-bottom: 10px solid #fff; /* 下边框的长度|高,以及背景色 */
+    font-size: 0;
+    line-height: 0;
+    left: -5px;
+    top: 2px;
+}
+.arrow-modal-box p{
+    line-height: 18px;
+    padding-left: 10px;
+    margin-bottom: 0px;
+}
+p.first{
+    margin-top: -7px;
+}
+.arrow-modal-box p label,span{
+    font-size: 14px;
+    font-weight: normal;
+    display: inline-block;
+    margin-bottom: 0px;
+}
+/*change bootstrap*/
+.debtCenterMain .nav{
+  min-width: inherit;
+  height: 51px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+  color: #fff;
+  cursor: default;
+  background-color: #4EC0EC;
+}
+/*模拟select*/
+.select_box{
+  float: left;
+}
+.select_box input{
+  width: 160px;
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  color: #444;
+}
+.select_ul{
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid #D2D3D3;
+  position: absolute;
+  top:29px;
+}
+.select_ul li{
+  height: 50px;
+  line-height: 50px;
+}
+.select_ul.cur li:hover{
+  background-color: #4EC0EC;
+}
+/*panel*/
+#navfouce li{
+  float: left;
+  width: 100px;
+  border: 1px solid #DBDBDB;
+  background-color: #F4F4F4;
+}
+#navfouce li:hover,#navfouce li:active,#navfouce li:focus{
+  background-color: #fff;
+}
+#navfouce li a{
+  color: #444;
+}
+.box{
+  background-color: #fff;
+}
+.sublist h3{
+  font-size: 14px;
+  color: #F99781;
+  float: left;
+  margin-left: 11px;
+}
+.sublist .cur li{
+  float: left;
+  margin-left: 20px;
+}
+.sublist .cur li:hover,.sublist .cur li:active,.sublist .cur li:focus{
+  background-color: #4EC0EC;
+}

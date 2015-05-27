@@ -1,0 +1,215 @@
+.aboutCenter{
+    height: 100%;
+	min-height:50px;
+	height:auto !important;
+    background-color: #F4F4F4;
+}
+.aboutCenterMain{
+    width: 1100px;
+    height: 100%;
+	min-height:50px;
+	height:auto !important;
+    margin: 0px auto;
+    padding: 0px 50px;
+    position: relative;
+    top: -20px;
+}
+.aboutCenterCon{
+    min-height: 50px;
+    border-left:1px solid #CFD0D0;
+    border-right: 1px solid #CFD0D0;
+    background-color: #fff;
+    overflow: hidden;
+}
+.aboutMenu{
+    float: left;
+    width: 150px;
+    background-color: #fff;
+    border-right: 1px solid #CFD0D0;
+    min-height: 50px;
+    font-size: 14px;
+}
+.aboutMenu li a{
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    display: inline-block;
+    width: 150px;
+    color: #000;
+}
+.aboutMenu li a:hover{
+    background-color: #C4E9F7;
+}
+.aboutMenu li a:active{
+    background-color: #4EC0EC;
+    color: #fff;
+}
+.aboutWrap{
+    padding: 20px 28px 68px 30px;
+    margin-left: 150px;
+    /*height: 760px;*/
+    background-color: #F4F4F4;
+    overflow: hidden;
+}
+.aboutWrap .con{
+    background-color: #fff;
+    width: 790px;
+    /*height: 672px;*/
+    border-radius: 15px;
+}
+/*aboutCompany*/
+.aboutConpanyCon{
+    padding-left: 52px;
+}
+.aboutConpanyCon h2{
+    font-size: 16px;
+    height: 52px;
+    line-height: 52px;
+    margin: 0px;
+}
+.aboutConpanyCon p{
+    font-size: 14px;
+}
+/*mediaReport*/
+.mediaReportCon{
+    padding-left: 22px;
+    padding-right: 26px;
+}
+.mediaReportCon h2{
+    font-size: 16px;
+    height: 52px;
+    line-height: 52px;
+    text-indent: 27px;
+    margin: 0px;
+}
+.mediaReportCon>p{
+    font-size: 14px;
+    height: 52px;
+    line-height: 52px;
+    text-indent: 27px;
+    margin: 0px;
+}
+.mediaReportBox{
+    padding: 20px 0px;
+    overflow:hidden
+}
+.mediaReportBox .image{
+    width: 350px;
+    height: 160px;
+    background-color: lightblue;
+    margin-right: 45px;
+    float: left;
+}
+.mediaReportBox .newsText{
+    color: #5D5D5D;
+    width: 347px;
+    float: left;
+}
+.newsText h1{
+    margin: 0px;
+    display: block;
+    font-size: 16px;
+    border-bottom: 1px solid #5D5D5D;
+}
+.newsText p{
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0px;
+}
+.titleIcon-cur{
+    display: inline-block;
+    background-image: url("/source/images/about.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 16px;
+    height: 16px;
+    float: right;
+}
+.titleIcon{
+    display: inline-block;
+    background-image: url("/source/images/about.png");
+    background-repeat: no-repeat;
+    background-position: -18px 0px;
+    width: 16px;
+    height: 16px;
+    float: right;
+}
+/*newTrend*/
+.newTrendCon{
+    padding: 0px 47px;
+}
+.newTrendCon h2{
+    font-size: 16px;
+    height: 52px;
+    line-height: 52px;
+    margin: 0px;
+}
+.newTrendCon ul{
+    font-size: 12px;
+}
+.newTrendCon ul li{
+    height: 52px;
+    line-height: 52px;
+    border-bottom: 1px solid #C0C0C0;
+}
+.date{
+    float: right;
+}
+/*siteNotice*/
+/*recruitment*/
+.recruitmentCon{
+    padding: 0px 47px;
+}
+.recruitmentCon h2{
+    font-size: 16px;
+    height: 52px;
+    line-height: 52px;
+    margin: 0px;
+}
+.recruitmentCon h2:first-child{
+    border-bottom: 1px solid #C0C0C0 ;
+}
+.recruitmentCon p{
+    height: 207px;
+}
+.recruitmentCon button{
+    width: 697px;
+    height: 37px;
+    text-align: left;
+}
+.recruitmentCon .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    /* margin-left: 2px; */
+    vertical-align: middle;
+    /* right: 0px; */
+    /* margin-left: 300px; */
+    right: 11px;
+    top: 14px;
+    position: absolute;
+    border-top: 13px solid;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+}
+.recruitmentCon .btn-group{
+    margin-bottom: 20px;
+}
+.recruitmentCon .btn-group ul{
+    width: 697px;
+}
+/*contactUs*/
+.contactUsCon {
+    padding: 0px 47px;
+    font-size: 12px;
+}
+.contactUsCon h2{
+    font-size: 16px;
+    height: 52px;
+    line-height: 52px;
+    margin: 0px;
+    border-bottom: 1px solid #C0C0C0 ;
+}
+.contactUsCon p{
+    line-height: 32px;
+}

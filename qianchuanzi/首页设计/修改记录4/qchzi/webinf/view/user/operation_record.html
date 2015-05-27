@@ -1,0 +1,1327 @@
+<html><head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <link rel="stylesheet" href="../../../source/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../source/css/global.css">
+    <link rel="stylesheet" href="../../../source/css/personCenter.css">
+    <link rel="stylesheet" href="../../../source/css/validform.css">
+    <link href="../../../source/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="../../../source/css/chongzhi.css">
+    <link rel="stylesheet" href="../../../source/css/recharge.css">
+    <script src="../../../source/js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="../../../source/js/bootstrap.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../../../source/js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="../../../source/js/validform-5.3.2.js" charset="UTF-8"></script>
+    <script src="../../../source/js/highcharts.js" type="text/javascript"></script>
+	<script src="../../../source/js/highchartsmore.js" type="text/javascript"></script>
+    <script src="../../../source/js/draw.js" type="text/javascript"></script>
+</head>
+
+
+
+<body><div class="header">
+  <div class="top">
+    <div class="topMain">
+      <div class="top_logo"><a href="/index.html"><img src="../../../source/images/logo.png" height="60px"></a></div>
+      <div style="width:100%; height:30px; line-height:30px; text-align:right;">
+          <span>客服电话：400-900-9888</span>
+      </div>
+      <div style="width:100%; height:30px;">
+      	<div class="topCon">
+            <div class="share">
+              <span class="icons icon-WeChat"></span><span class="icons icon-MicroBlog"></span>
+            </div>
+            <div class="topEnter">
+            	<span><a href="/login.html">我的账号</a></span>
+          		<span><a href="/logout.html">安全退出</a></span>
+          		<span class="brokenBar">|</span> 
+                <span>帮助中心</span>
+            </div>
+            <div class="topLogin">
+              <span>您好！欢迎来到钱串子！</span>
+            </div>
+      	</div>
+      </div>
+    </div>
+  </div>
+  <div class="nav">
+    <div class="navMain">
+      <div class="navCon">
+        <div class="nav-tab">
+          <a class="nav-tab" href="/index.html">首&emsp;页</a>
+          <a class="nav-tab">我要投资</a>
+          <a class="nav-tab">我的账户</a>
+          <a class="nav-tab">论&emsp;坛</a>
+          <a class="nav-tab">帮&emsp;助</a>
+          <a class="nav-tab" href="/about/brief.html">关于我们</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+    <div class="userCenter">
+        <div class="userCenterMain">
+            <div class="userCenterCon">
+            
+                <div class="userMenu">
+                    <ul>
+                        <p>我的账户</p>
+                        <li class="subMenu" id="index" style="background:#4EC0EC;"><a class="subMenu" href="/user/wealth.html">账户总览</a></li>
+                        <li class="subMenu" id="profit"><a class="subMenu" href="/user/profit.html">我的收益</a>
+                        </li><li class="subMenu" id="auto_trade"><a class="subMenu" href="/user/autotrade.html">自动交易记录</a></li>
+                        <li class="subMenu" id="opera"><a class="subMenu" href="/user/operation_record.html">账户操作记录</a></li>
+                        <li class="subMenu" id="withdraw"><a class="subMenu" href="/user/withdraw.html"> 提现申请</a></li>
+                    </ul>
+                    <ul>
+                        <p>我的资料</p>
+                        <li class="subMenu" id="valify"><a class="subMenu" href="/user/identity_manage.html">认证管理</a></li>
+                        <li class="subMenu" id="bankcard"><a class="subMenu" href="/user/bankcard_manage.html">银行卡管理</a></li>
+                        <li class="subMenu" id="info"><a class="subMenu" href="/user/person_info.html">个人信息管理</a></li>
+                    </ul>
+                    <ul>
+                        <p>安全中心</p>
+                        <li class="subMenu" id="reset_login_pass"><a class="subMenu" href="/user/modify_pass.html">重置登录密码</a> </li>
+                        <li class="subMenu" id="set_pass_pro"><a class="subMenu" href="/user/setPwdQuestion.html">设置密保问题</a></li>
+                        <li class="subMenu"><a class="subMenu" id="reset_trade_pass" href="/user/reset_trade_pwd.html">重置交易密码</a></li>
+                    </ul>
+                    <hr>
+                    <p class="identity" style="margin-top:-15px;">
+                        <span class="icons icon-identityIDCard pos-rel" style="margin-right:5px;" title="已通过实名认证"><span class="icons icon-done"></span></span>
+                        <span class="icons icon-identityPhone pos-rel" style="margin-right:5px;" title="已绑定手机号"><span class="icons icon-done"></span></span>
+                        <span class="icons icon-identityBankCard pos-rel" style="margin-right:5px;" title="已绑定银行卡"><span class="icons icon-done"></span></span>
+                    </p>
+                </div>
+                
+                <div class="chongzhi">
+                	<div class="navtab"> 
+                        <ul> 
+                        <li><a href="javascript:void(0)" class="cur">立即充值</a></li> 
+                        <li><a href="javascript:void(0)">充值记录</a></li>
+                        </ul>
+                    </div>
+                    <div class="container">
+                        <div class="sub-con cur-sub-con">
+                        	<div class="recharge" style="width:100%; overflow:hidden">
+                            	<div class="alert alert-success" id="success-tip" style="display: none;">
+                                    <div class="ico-alert ico-alert-success"></div>
+                                    <div class="alert-content"></div>
+                                    <div class="ico-alert-close ico-alert-close-success"></div>
+                                </div>
+                                
+                                <div class="alert" id="error-tip" style="display: none;">
+                                    <div class="ico-alert"></div>
+                                    <div class="alert-content"></div>
+                                    <div class="ico-alert-close"></div>
+                                </div>
+                            
+                                <div class="htp-l"></div>
+                            
+                                <div class="recharge-balance">
+                                    <div class="recharge-balance-total">
+                                        <p class="recharge-title">账户余额：</p>
+                                        <span class="fr dis-block">
+                                            <label class="fz16 fz-hl">1.00</label>
+                                            <span class="fz14">元</span>
+                                        </span>
+                                    </div>
+                                    <div class="recharge-balance-detail fz14">（可提现：1.00元，充值卡：0.00元，奖金：0.00元）</div>
+                                </div>
+                                <div class="htp-l"></div>
+                                <div class="amount-input">
+                                    <label for="amountr" class="amount-input-title">充值金额：</label>
+                                    <input type="text" name="amountr" id="amountVlu" class="amount-input-txt" data-pervlu="1" data-maxvlu="9999999" data-minvlu="1" style="padding-right:1px">
+                                    <span class="amount-input-unit fz14">元</span>        
+                                </div>
+                                <div class="amount-tip" style="display: none;"> 
+                                    <div class="amount-tip-content"></div>
+                                    <span class="amount-tip-arrow"></span>
+                                </div>
+                                <div class="htp-l"></div>
+                                <div class="banks">
+                                    <div class="banks-title fz14">选择银行：</div>
+                                    <div class="banks-cont">
+                                    
+                                     <div class="bankRow normal-top">
+                                        <label id="quota_icbc_label" class="bankw normal-ml bank-selet" title="中国工商银行">
+                                            <input type="radio" checked name="bankCode" value="quota_icbc" data-paytype="2,0" data-xinlang="ICBC" data-fengfu="icbc" data-quota="quota_icbc">
+                                            <span class="bankw-logo icbc-nw"></span>
+                                        </label>
+                                        <label id="quota_ccb_label" class="bankw" id="js" title="中国建设银行">
+                                            <input type="radio" name="bankCode" value="quota_ccb" data-paytype="2,0" data-xinlang="CCB" data-fengfu="ccb" data-quota="quota_ccb">
+                                            <span class="bankw-logo ccb-nw"></span>
+                                        </label>
+                                        <label id="quota_cmb_label" class="bankw" title="招商银行">
+                                            <input type="radio" name="bankCode" value="quota_cmb" data-paytype="2,0" data-xinlang="CMB" data-fengfu="cmb" data-quota="quota_cmb">
+                                            <span class="bankw-logo cmb-nw"></span>
+                                        </label>
+                                    </div>
+                                    <div class="bankRow">
+                                        <label id="quota_abc_label" class="bankw normal-ml" title="中国农业银行">
+                                            <input type="radio" name="bankCode" value="quota_abc" data-paytype="2,0" data-xinlang="ABC" data-fengfu="abc" data-quota="quota_abc">
+                                            <span class="bankw-logo abc-nw"></span>
+                                        </label>
+                                        <label id="quota_hxb_label" class="bankw" title="华夏银行">
+                                            <input type="radio" name="bankCode" value="quota_hxb" data-paytype="2,0" data-xinlang="HXB" data-fengfu="hxb" data-quota="quota_hxb">
+                                            <span class="bankw-logo hxb-nw"></span>
+                                        </label>
+                                        <label id="quota_cmbc_label" class="bankw" title="中国民生银行">
+                                            <input type="radio" name="bankCode" value="quota_cmbc" data-paytype="2,0" data-xinlang="CMBC" data-fengfu="cmsb" data-quota="quota_cmbc">
+                                            <span class="bankw-logo cmbc-nw"></span>
+                                        </label>
+                                    </div>
+                                    <div class="bankRow">
+                                        <label id="quota_boc_label" class="bankw normal-ml" title="中国银行">
+                                            <input type="radio" name="bankCode" value="quota_boc" data-paytype="2,0" data-xinlang="BOC" data-fengfu="boc" data-quota="quota_boc">
+                                            <span class="bankw-logo boc-nw"></span>
+                                        </label>
+                                        <label id="quota_comm_label" class="bankw" title="交通银行">
+                                            <input type="radio" name="bankCode" value="quota_comm" data-paytype="2,0" data-xinlang="COMM" data-fengfu="comm" data-quota="quota_comm">
+                                            <span class="bankw-logo comm-nw"></span>
+                                        </label>
+                                        <label id="quota_ceb_label" class="bankw" title="中国光大银行">
+                                            <input type="radio" name="bankCode" value="quota_ceb" data-paytype="2,0" data-xinlang="CEB" data-fengfu="ceb" data-quota="quota_ceb">
+                                            <span class="bankw-logo ceb-nw"></span>
+                                        </label>
+                                    </div>
+                                    <div class="bankRow">
+                                        <label id="quota_spdb_label" class="bankw normal-ml" title="上海浦东发展银行">
+                                            <input type="radio" name="bankCode" value="quota_spdb" data-paytype="2,0" data-xinlang="SPDB" data-fengfu="spdb" data-quota="quota_spdb">
+                                            <span class="bankw-logo spdb-nw"></span>
+                                        </label>
+                                        <label id="quota_citic_label" class="bankw" title="中信银行">
+                                            <input type="radio" name="bankCode" value="quota_citic" data-paytype="2,0" data-xinlang="CITIC" data-fengfu="cncb" data-quota="quota_citic">
+                                            <span class="bankw-logo citic-nw"></span>
+                                        </label>
+                                        <label id="quota_szpab_label" class="bankw" title="深圳平安银行">
+                                            <input type="radio" name="bankCode" value="quota_szpab" data-paytype="2,0" data-xinlang="SZPAB" data-fengfu="pab" data-quota="quota_szpab">
+                                            <span class="bankw-logo szpab-nw"></span>
+                                        </label>
+                                    </div>
+                                    <div class="bankRow"> 
+                                        <label id="quota_psbc_label" class="bankw normal-ml" title="中国邮政储蓄银行">
+                                            <input type="radio" name="bankCode" value="quota_psbc" data-paytype="2,0" data-xinlang="PSBC" data-fengfu="psbc" data-quota="quota_psbc">
+                                            <span class="bankw-logo psbc-nw"></span>
+                                        </label>
+                                        <label id="quota_cgb_label" class="bankw" title="广发银行">
+                                            <input type="radio" name="bankCode" value="quota_cgb" data-paytype="2,0" data-xinlang="GDB" data-fengfu="cgb" data-quota="quota_cgb">
+                                            <span class="bankw-logo cgb-nw"></span>
+                                        </label>
+                                        <label id="quota_shb_label" class="bankw" title="上海银行">
+                                            <input type="radio" name="bankCode" value="quota_shb" data-paytype="2,0" data-xinlang="BOS" data-fengfu="shb" data-quota="quota_shb">
+                                            <span class="bankw-logo shb-nw"></span>
+                                        </label>
+                                     </div>
+                                    <div class="bankRow"> 
+                                        <label id="quota_cib_label" class="bankw normal-ml" title="兴业银行">
+                                            <input type="radio" name="bankCode" value="quota_cib" data-paytype="2,0" data-xinlang="CIB" data-fengfu="cib" data-quota="quota_cib">
+                                            <span class="bankw-logo cib-nw"></span>
+                                        </label>
+                                        <label id="quota_bccb_label" class="bankw" title="北京银行">
+                                            <input type="radio" name="bankCode" value="quota_bccb" data-paytype="1,0" data-xinlang="BCCB" data-fengfu="" data-quota="quota_bccb">
+                                            <span class="bankw-logo bccb-nw"></span>
+                                        </label>
+                                        
+                                        <label id="quota_rcb_label" class="bankw" title="北京农商银行">
+                                            <input type="radio" name="bankCode" value="quota_rcb" data-paytype="1,1" data-xinlang="" data-fengfu="rcb" data-quota="quota_rcb">
+                                            <span class="bankw-logo rcb-nw"></span>
+                                        </label>
+                                        
+                                     </div>
+                                    
+                                    <div class="bankRow"> 
+                                        <label id="quota_bea_label" class="bankw normal-ml" title="东亚银行">
+                                            <input type="radio" name="bankCode" value="quota_bea" data-paytype="1,1" data-xinlang="" data-fengfu="bea" data-quota="quota_bea">
+                                            <span class="bankw-logo bea-nw"></span>
+                                        </label>
+                                        <label id="quota_nbcb_label" class="bankw" title="宁波银行">
+                                            <input type="radio" name="bankCode" value="quota_nbcb" data-paytype="1,1" data-xinlang="" data-fengfu="nbcb" data-quota="quota_nbcb">
+                                            <span class="bankw-logo nbcb-nw"></span>
+                                        </label>
+                                        <label id="quota_zsb_label" class="bankw" title="浙商银行">
+                                            <input type="radio" name="bankCode" value="quota_zsb" data-paytype="1,1" data-xinlang="" data-fengfu="zsb" data-quota="quota_zsb">
+                                            <span class="bankw-logo zsb-nw"></span>
+                                        </label>
+                                     </div>
+                                    <div class="bankRow"> 
+                                        <label id="quota_hzb_label" class="bankw normal-ml" title="杭州银行">
+                                            <input type="radio" name="bankCode" value="quota_hzb" data-paytype="1,1" data-xinlang="" data-fengfu="hzb" data-quota="quota_hzb">
+                                            <span class="bankw-logo hzb-nw"></span>
+                                        </label>
+                                        <label id="quota_hsb_label" class="bankw" title="徽商银行">
+                                            <input type="radio" name="bankCode" value="quota_hsb" data-paytype="1,1" data-xinlang="" data-fengfu="hsb" data-quota="quota_hsb">
+                                            <span class="bankw-logo hsb-nw"></span>
+                                        </label>
+                                        <label id="quota_cbhb_label" class="bankw" title="渤海银行">
+                                            <input type="radio" name="bankCode" value="quota_cbhb" data-paytype="1,1" data-xinlang="" data-fengfu="cbhb" data-quota="quota_cbhb">
+                                            <span class="bankw-logo cbhb-nw"></span>
+                                        </label>
+                                     </div>
+                                          
+                                    </div>
+                                </div>
+                                <!--限额显示开始 -->
+                                <div class="bank-quota" id="quota_icbc" style="display: block;">
+                                    <p>中国工商银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th style="width:70px;">支付方式</th>
+                                                <th style="width:120px;">单笔交易限额（元）</th>
+                                                <th style="">单日交易限额（元）</th>
+                                                <th style="">备注</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>工银e支付</td>
+                                                <td>1万</td>
+                                                <td>1万（可通过电子银行使用U盾或到营业网点申请上调限额）</td>
+                                                <td>2015年1月15日后的新客户执行本限额，此前开通的老客户执行原限额</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>U盾</td>
+                                                <td>100万</td>
+                                                <td>100万或500万</td>
+                                                <td>一代U盾日限额为100万元，二代U盾日限额为500万元。</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="5"><a class="link-blue" href="https://www.leqian.com/h141.html" target="_blank">中国工商银行充值指南</a>（由于各银行限额随时调整，具体限额请咨询开户银行。）</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_ccb" style="display: none;">
+                                    <p>中国建设银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>账号支付</td>
+                                                <td>1000</td>
+                                                <td>1000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>账号支付（大额实名）</td>
+                                                <td>5000</td>
+                                                <td>2万</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>动态口令</td>
+                                                <td>5000</td>
+                                                <td>5000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>网银盾1代</td>
+                                                <td>5万</td>
+                                                <td>10万</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>网银盾1代</td>
+                                                <td>50万</td>
+                                                <td>50万</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4"><a class="link-blue" href="https://www.leqian.com/h142.html" target="_blank">中国建设银行充值指南</a>（由于各银行限额随时调整，具体限额请咨询开户银行。）</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_cmb" style="display: none;">
+                                    <p>招商银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>大众版</td>
+                                                <td>500</td>
+                                                <td>500</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>专业版</td>
+                                                <td>无限额</td>
+                                                <td>无限额</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">由于各银行限额随时调整，具体限额请咨询开户银行。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_abc" style="display: none;">
+                                    <p>中国农业银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>动态口令</td>
+                                                <td>1000</td>
+                                                <td>3000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>K令支付</td>
+                                                <td>10万</td>
+                                                <td>50万</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>移动证书（一代K宝）</td>
+                                                <td>50万</td>
+                                                <td>100万</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>移动证书（一代K宝）</td>
+                                                <td>100万</td>
+                                                <td>500万</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4"><a class="link-blue" href="https://www.leqian.com/h145.html" target="_blank">中国农业银行充值指南</a>（由于各银行限额随时调整，具体限额请咨询开户银行。）</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_hxb" style="display: none;">
+                                    <p>华夏银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>大众版</td>
+                                                <td>300</td>
+                                                <td>1000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>手机动态</td>
+                                                <td>500</td>
+                                                <td>2000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>数字证书</td>
+                                                <td>5000</td>
+                                                <td>2万</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">由于各银行限额随时调整，具体限额请咨询开户银行。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_cmbc" style="display: none;">
+                                    <p>中国民生银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>大众版（非签约用户）</td>
+                                                <td>300</td>
+                                                <td>300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>贵宾版（签约用户）</td>
+                                                <td>5000</td>
+                                                <td>5000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>U宝用户</td>
+                                                <td>50万</td>
+                                                <td>50万（信用卡与借记卡共享）</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">由于各银行限额随时调整，具体限额请咨询开户银行。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_boc" style="display: none;">
+                                    <p>中国银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>中银快付</td>
+                                                <td>1000</td>
+                                                <td>5000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>UKEY认证证书、令牌+动态口令</td>
+                                                <td>1万</td>
+                                                <td>20万</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4"><a class="link-blue" href="https://www.leqian.com/h144.html" target="_blank">中国银行充值指南</a>（由于各银行限额随时调整，具体限额请咨询开户银行。）</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_comm" style="display: none;">
+                                    <p>交通银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>手机短信密码验证</td>
+                                                <td>5万</td>
+                                                <td>5万</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>USBKey证书认证</td>
+                                                <td>100万</td>
+                                                <td>100万</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">由于各银行限额随时调整，具体限额请咨询开户银行。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_ceb" style="display: none;">
+                                    <p>中国光大银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>手机动态密码</td>
+                                                <td>5000</td>
+                                                <td>5000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>令牌动态密码</td>
+                                                <td>50万</td>
+                                                <td>50万</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>阳光网盾</td>
+                                                <td>50万</td>
+                                                <td>50万</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">由于各银行限额随时调整，具体限额请咨询开户银行。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_spdb" style="display: none;">
+                                    <p>上海浦东发展银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>手机动态密码</td>
+                                                <td>20万</td>
+                                                <td>20万</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">由于各银行限额随时调整，具体限额请咨询开户银行。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_citic" style="display: none;">
+                                    <p>中信银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>手机动态密码</td>
+                                                <td>1000</td>
+                                                <td>5000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>U盾</td>
+                                                <td>100万</td>
+                                                <td>100万</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">由于各银行限额随时调整，具体限额请咨询开户银行。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_szpab" style="display: none;">
+                                    <p>平安银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>网银</td>
+                                                <td>无限额</td>
+                                                <td>5万</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">由于各银行限额随时调整，具体限额请咨询开户银行。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_psbc" style="display: none;">
+                                    <p>中国邮政储蓄银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>手机短息客户</td>
+                                                <td>1万</td>
+                                                <td>1万</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>电子令牌+短信客户</td>
+                                                <td>20万</td>
+                                                <td>20万</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>UKey+短信客户</td>
+                                                <td>200万</td>
+                                                <td>200万</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">由于各银行限额随时调整，具体限额请咨询开户银行。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_cgb" style="display: none;">
+                                    <p>广发银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>手机动态密码版</td>
+                                                <td>3000</td>
+                                                <td>3000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>Key盾</td>
+                                                <td>2万</td>
+                                                <td>2万</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4"><a class="link-blue" href="https://www.leqian.com/h143.html" target="_blank">广发银行充值指南</a>（由于各银行限额随时调整，具体限额请咨询开户银行。）</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_shb" style="display: none;">
+                                    <p>上海银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>网银+动态密码</td>
+                                                <td>6000</td>
+                                                <td>1万</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>网银+E盾证书版</td>
+                                                <td>50万</td>
+                                                <td>100万</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">由于各银行限额随时调整，具体限额请咨询开户银行。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_cib" style="display: none;">
+                                    <p>兴业银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>电子支付E卡</td>
+                                                <td>5000</td>
+                                                <td>5000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>非证书</td>
+                                                <td>5000</td>
+                                                <td>5000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>证书客户</td>
+                                                <td>100万</td>
+                                                <td>100万</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">由于各银行限额随时调整，具体限额请咨询开户银行。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_bccb" style="display: none;">
+                                    <p>北京银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>动态密码版</td>
+                                                <td>1000</td>
+                                                <td>5000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>证书版</td>
+                                                <td>100万</td>
+                                                <td>100万</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">由于各银行限额随时调整，具体限额请咨询开户银行。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_rcb" style="display: none;">
+                                    <p>北京农商银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>手机认证</td>
+                                                <td>10万</td>
+                                                <td>50万</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>Key认证</td>
+                                                <td>无限额</td>
+                                                <td>无限额</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">由于各银行限额随时调整，具体限额请咨询开户银行。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_bea" style="display: none;">
+                                    <p>东亚银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>手机动态码</td>
+                                                <td>5000</td>
+                                                <td>2万</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>安全Key</td>
+                                                <td>100万</td>
+                                                <td>100万</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">由于各银行限额随时调整，具体限额请咨询开户银行。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_nbcb" style="display: none;">
+                                    <p>宁波银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>短信动态码</td>
+                                                <td>5万</td>
+                                                <td>5万</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>USBKey移动证书</td>
+                                                <td>无限额</td>
+                                                <td>无限额</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">由于各银行限额随时调整，具体限额请咨询开户银行。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_zsb" style="display: none;">
+                                    <p>浙商银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>手机动态码</td>
+                                                <td>200</td>
+                                                <td>1000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>专业版证书</td>
+                                                <td>无限额</td>
+                                                <td>无限额</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">由于各银行限额随时调整，具体限额请咨询开户银行。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_hzb" style="display: none;">
+                                    <p>杭州银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>非签约版</td>
+                                                <td>300</td>
+                                                <td>300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>专业版</td>
+                                                <td>无限额</td>
+                                                <td>无限额</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">由于各银行限额随时调整，具体限额请咨询开户银行。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                
+                                <div class="bank-quota" id="quota_hsb" style="display: none;">
+                                    <p>徽商银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>动态密码</td>
+                                                <td>1000</td>
+                                                <td>5000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>浏览器证书</td>
+                                                <td>1000</td>
+                                                <td>5000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>USBKey</td>
+                                                <td>50万</td>
+                                                <td>200万</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">由于各银行限额随时调整，具体限额请咨询开户银行。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div> 
+                                
+                                <div class="bank-quota" id="quota_cbhb" style="display: none;">
+                                    <p>渤海银行网银限额：</p>
+                                    <div class="htp-s"></div>
+                                    <table class="bank-quota-table">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:50px;">卡种</th>
+                                                <th>支付方式</th>
+                                                <th>单笔交易限额（元）</th>
+                                                <th>单日交易限额（元）</th>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>动态口令</td>
+                                                <td>2万</td>
+                                                <td>10万</td>
+                                            </tr>
+                                            <tr>
+                                                <td>借记卡</td>
+                                                <td>数字证书</td>
+                                                <td>2万</td>
+                                                <td>10万</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="4">由于各银行限额随时调整，具体限额请咨询开户银行。</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>  
+                                <!--限额显示结束 -->
+                              
+                                  
+                                <div class="htp"></div>
+                             
+                                <div class="banks">
+                                    <div class="banks-title fz14">充值方式：</div>
+                                    <div class="banks-cont">
+                                    
+                                     <div class="bankRow normal-top">
+                                            <label id="xinlang" class="bankType normal-ml bankType-selet">
+                                                <input type="radio" name="payType" value="1">
+                                                <span id="xinlangspan" class="bankw-type xinlang"></span>
+                                            </label>
+                                            <label id="fengfu" class="bankType">
+                                                <input type="radio" name="payType" value="2">
+                                                <span id="fengfuspan" class="bankw-type fengfu"></span>
+                                            </label>
+                                    </div>
+                                                
+                                    </div>
+                                </div>
+                                
+                                <div class="htp-xl"></div>
+                                
+                                <a class="btn btn-xxl" href="javascript:void(0);" id="rechargeBtn">立即充值</a>
+                                <div class="htp-s"></div>
+                                <p class="quest fz14">充值有问题？<a class="link-blue" href="https://www.leqian.com/h53.html" target="_blank">查看支付帮助</a>或联系钱串子客服：400-890-6767</p>
+                                
+                                <div class="htp-xl"></div>
+                                
+                                <p class="fz14">特别提示：钱串子对用户通过第三方支付平台产生的手续费进行部分补贴，规则如下：</p>
+                                <p class="tishi fz14">1、充值手续费：全免费（钱串子补贴充值手续费）。</p>
+                                <p class="tishi fz14">2、提现手续费：已投资金和利息免费（钱串子补贴提现手续费），未投资金钱串子代扣0.5%。</p>
+                                
+                                <div class="htp-xl"></div>
+                                
+                                <form action="/sinarecharge.html" id="submitForm" method="post" style="display:none" target="_blank">
+                                    <input type="hidden" id="chargeType" name="chargeType" value="">
+                                    <input type="hidden" id="totalPrice" name="totalPrice" value="">
+                                    <input type="hidden" id="bankcode" name="bankcode" value="">
+                                </form>
+                            
+                            </div>
+                        </div> 
+                        <div class="sub-con">
+                        	<table cellpadding="0" cellspacing="0" width="100%;">
+                            	<tr>
+                                	<td class="td1 td-bg">时间</td>
+                                    <td class="td2 td-bg">充值金额</td>
+                                    <td class="td3 td-bg">充值状态</td>
+                                    <td class="td4 td-bg">参考流水号</td>
+                                </tr>
+                                <tr>
+                                	<td class="td1 td-border">2015-04-03 23:07:07</td>
+                                    <td class="td2 td-border">1.00元</td>
+                                    <td class="td3 td-border">充值成功</td>
+                                    <td class="td4 td-border">lq20150403230629117317222</td>
+                                </tr>
+                                <tr>
+                                	<td class="td1 td-border">2015-04-03 23:07:07</td>
+                                    <td class="td2 td-border">1.00元</td>
+                                    <td class="td3 td-border">充值成功</td>
+                                    <td class="td4 td-border">lq20150403230629117317222</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div> 
+                </div>
+				<script type="text/javascript"> 
+                $(document).ready(function(){ 
+					var intervalID; 
+					var curLi; 
+					$(".navtab li a").mouseover(function(){ curLi=$(this);}); 
+					$(".navtab li a").click(function(){//鼠标点击也可以切换 
+					clearInterval(intervalID); 
+					$(".cur-sub-con").removeClass("cur-sub-con"); 
+					$(".sub-con").eq($(".navtab li a").index(curLi)).addClass("cur-sub-con"); 
+					$(".cur").removeClass("cur"); 
+					curLi.addClass("cur"); 
+					});
+                }); 
+				
+                </script> 
+                <script type="text/javascript">
+				function getTagsInfo($doms){
+					alert($doms);
+					return $doms.map(function(){
+					   return "#" + this.class;
+					}).get();
+				}
+				$(function(){
+				  $(":radio").click(function(){
+					  var bankname = $(this).val();
+					  var paytype = $(this).attr("data-paytype");
+					  var bankCode = document.getElementsByName("bankCode");
+					  for(var i=0;i<bankCode.length;i++){
+						  var id = bankCode[i].getAttribute("value");
+						  $("#"+id).attr("style","display:none");
+						  $("#"+id+"_label").removeClass("normal-ml");
+						  $("#"+id+"_label").removeClass("bank-selet");
+					  }
+					  //$(".bank-selet").removeClass("normal-ml");
+					  //$(".bank-selet").removeClass("bank-selet");
+					  $("#"+bankname+"_label").addClass("normal-ml");
+					  $("#"+bankname+"_label").addClass("bank-selet");
+					  $("#"+bankname).attr("style","display:block");
+					  var paytypes = new Array();
+					  paytypes = paytype.split(",");
+					  if(paytypes[0]==1)
+					  {
+						  if(paytypes[1]==0)
+						  {
+							  $("#fengfu").removeClass("bankType-selet");
+						  	  $("#xinlang").addClass("bankType-selet");
+							  $("#xinlangspan").removeClass("xinlang-dis");
+							  $("#xinlangspan").addClass("xinlang");
+							  $("#fengfuspan").removeClass("fengfu");
+							  $("#fengfuspan").addClass("fengfu-dis");
+						  }else if(paytypes[1]==1)
+						  {
+							  $("#xinlang").removeClass("bankType-selet");
+							  $("#fengfu").addClass("bankType-selet");
+							  $("#fengfuspan").removeClass("fengfu-dis");
+							  $("#fengfuspan").addClass("fengfu");
+							  $("#xinlangspan").removeClass("xinlang");
+							  $("#xinlangspan").addClass("xinlang-dis");
+						  }
+					  }else if(paytypes[0]==2)
+					  {
+						  $("#fengfu").removeClass("bankType-selet");
+						  $("#xinlang").addClass("bankType-selet");
+						  $("#xinlangspan").removeClass("xinlang-dis");
+						  $("#xinlangspan").addClass("xinlang");
+						  $("#fengfuspan").removeClass("fengfu-dis");
+						  $("#fengfuspan").addClass("fengfu");
+					  }
+				  });
+				});
+				</script>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+<link rel="stylesheet" href="../../../source/css/foot.css">
+	<!-- <footer> 
+		  <div class="m-foot"> -->
+		  	<div class="fix_width">
+		  		<div class="m-information">
+		  			<div class="about-us">
+		  				<dl>
+		  					<dd>关于我们</dd>
+		  					<dt>
+		  						<a href="/about/brief.html">公司简介</a>
+		  					</dt>
+		  					<dt>
+		  						<a href="/about/contact.html">联系我们</a>
+		  					</dt>
+		  					<dt>
+		  						<a href="/about/jobs.html">加入我们</a>
+		  					</dt>
+		  					<dt></dt>
+		  				</dl>
+		  				<dl>
+		  					<dd>关于钱串子</dd>
+		  					<dt>
+		  						<a href="#">平台简介</a>
+		  					</dt>
+		  					<dt>
+		  						<a href="#">平台原理</a>
+		  					</dt>
+		  					<dt>
+		  						<a href="#">费率</a>
+		  					</dt>
+		  					<dt></dt>
+		  				</dl>
+		  				<dl>
+		  					<dd>用户协议</dd>
+		  					<dt>
+		  						<a href="#">政策法规</a>
+		  					</dt>
+		  					<dt>
+		  						<a href="#">隐私保护</a>
+		  					</dt>
+		  					<dt>
+		  						<a href="#">免责条款</a>
+		  					</dt>
+		  					<dt></dt>
+		  				</dl>
+		  				<dl>
+		  					<dd>常见问题</dd>
+		  					<dt>
+		  						<a href="#">投资人必读</a>
+		  					</dt>
+		  					<dt>
+		  						<a href="#">充值提现必读</a>
+		  					</dt>
+		  					<dt></dt>
+		  				</dl>
+		  			</div>
+		  			<div class="m-information-left">
+		  				<div class="hotline">
+		  					<h3 style="text-align:left;">客服热线</h3>
+		  					<p class="f24">400-900-9888</p>
+		  					<p class="f16">
+		  						<span style="line-height:1.5;">周一至周日8:00—20:00</span>
+		  					</p>
+		  				</div>
+		  				<div class="g-weixin">
+		  					<h3>官方微信</h3>
+		  					<p class="g-weixin-bg">
+		  						<img style="display: inline;" src="//static.firstp2p.com/attachment/201401/17/17/52d8f439e3be4.png" class="weixin_img" alt="" data-src="//static.firstp2p.com/attachment/201401/17/17/52d8f439e3be4.png" border="0"></p>
+		  				</div>
+		  			</div>
+		  		</div>
+		  		<div class="g-copyright">
+		  			<p class="pt10">
+		  				@钱串子&nbsp; &nbsp;北京钱串子科技有限责任公司
+		  				<br>		  
+		  				©2014 www.qianczi.com &nbsp;&nbsp;ICP备案：京ICP备15013400号-1&nbsp; &nbsp;网站备案号：京公安网备11010502026080
+		  			</p>
+		  		</div>
+		  	</div>
+		<!--  </div>
+	 </footer> -->
+</div>
+<!-- Modal -->
+<div class="modal fade" id="addBankCard" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog z">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">添加银行卡</h4>
+            </div>
+            <div class="modal-body fs14">
+                <p class="w100 mb30"><span class="red">温馨提示：</span>提现资金仅能转至本人名下的银行卡。禁止套现、洗钱行为。</p>
+
+                <form class="addBankCard" action="">
+                    <div>
+                        <label class="fw-no">开&ensp;户&ensp;行:</label>
+                        <select name="" id="">
+                            <option value="">中国工商银行</option>
+                            <option value="">中国工商</option>
+                            <option value="">中国工商</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">请选择省份</option>
+                            <option value="">择省份</option>
+                            <option value="">择省份</option>
+                        </select>
+                        <select name="" id="">
+                            <option value="">请选择地区</option>
+                            <option value="">择省份</option>
+                            <option value="">择省份</option>
+                        </select>
+                    </div>
+                    <div><label class="fw-no">开户支行:</label><input class="mb15" type="text"></div>
+                    <div><label class="fw-no">开户姓名:</label><input class="mb15" type="text"></div>
+                    <div><label class="fw-no">银行卡号:</label><input class="mb15" type="number"></div>
+                    <div class="form button ml62"><a href="">确认添加</a></div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+	$(function() {
+		$('.period').click(function(){
+			$a = $(this);
+			$('.period').removeClass('active');
+			$a.addClass('active');
+			var type = $a.attr('name');
+			$('#profit-trend-wrap').empty();
+			drawProfitTrend($('#profit-trend-wrap'),type);
+		});
+		
+		drawInterestTrend($("#interest-trend-wrap"), "week");
+		drawScaleTrend($('#scale-trend'), "week");
+	});
+</script></body></html>

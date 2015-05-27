@@ -1,0 +1,166 @@
+.footer2{
+	width:100%;
+	height:100%;
+	min-height:100px;
+	height:auto !important;
+	margin:auto;
+}
+.m-information {
+	width:1000px;
+    height: 260px;
+    position: relative;
+    padding: 30px 0px;
+	margin:auto;
+}
+
+.about-us {
+    float: left;
+    height: 200px;
+    padding-right: 20px;
+    width: 560px;
+
+}
+.about-us dl {
+    float: left;
+    margin: 0;
+    margin-right: 20px;
+    width: 160px;
+    padding: 0;
+}
+.about-us dl dd {
+    color: #dddddd;
+    font-size: 26px;
+    line-height: 50px;
+    padding-bottom: 0;
+    margin: 0;
+	border-bottom:1px solid #9f9fa2;
+}
+
+.about-us dl dt {
+    color: #9f9fa2;
+    line-height: 30px;
+	padding-left:30px;
+}
+
+.about-us dl dt a {
+    color: #9f9fa2;
+    font-size: 16px;
+}
+.fix_width {
+	width:100%;
+    margin: 0 auto;
+    padding: 0;
+	height:100%;
+	min-height:100px;
+    background: #575b6c;
+	height:auto !important;
+}
+
+.m-information-left {
+    float: left;
+    width: 400px;
+    padding: 0;
+}
+
+.g-copyright {
+    clear: both;
+    text-align: center;
+    background: #41465a;
+	padding:15px 0px;
+	font-size:16px;
+	height:65px;
+	line-height:35px;
+    color: #aaaaaa;
+}
+.g-copyright p {
+	margin: 0;
+    color: #aaaaaa;
+}
+.pt10 {
+    padding-top: 10px;
+}
+
+.hotline {
+    color: #fff;
+    width: 440px;
+}
+
+.m-information .g-weixin {
+    float: left;
+    width: 120px;
+    padding: 0;
+}
+.about-us dl dt a {
+    color: #9f9fa2;
+    font-size: 16px;
+}
+a {
+    color: #08c;
+    outline: 0 none;
+    text-decoration: none;
+}
+.m-information .g-weixin h3 {
+	margin: 0;
+    color: #fff;
+    font-size: 16px;
+    height: 26px;
+    line-height: 26px;
+}
+
+.m-information .g-weixin p {
+	margin: 0;
+    margin-top: 10px;
+}
+.g-weixin-bg {
+    height: 75px;
+    /* padding: 7px; */
+    padding-left: 30px;
+    width: 75px;
+}
+.m-information .g-weixin p {
+	margin: 0;
+    margin-top: 10px;
+}
+.f24 {
+    font-size: 24px;
+}
+.f10 {
+    font-size: 10px;
+}
+.f16 {
+    font-size: 16px;
+}
+
+.hotline h3 {
+    font-size: 16px;
+}
+.hotline dl{
+	float: left;
+	margin-right:50px;
+}
+.hotline dl dd {
+    color: #dddddd;
+    font-size: 26px;
+    line-height: 50px;
+	text-align:right;
+    padding-bottom: 0;
+    margin: 0;
+}
+.hotline dl dd img{
+	margin-top:15px;
+	margin-left:40px;
+}
+.hotline dl dt{
+    color: #9f9fa2;
+    font-size: 16px;
+	line-height: 30px;
+	text-align:right;
+}
+.g-weixin dl dd {
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+    padding-bottom: 0;
+    margin: 0;
+}
+.g-weixin img{ margin-top:10px;}

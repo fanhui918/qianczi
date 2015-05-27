@@ -1,0 +1,32 @@
+<div class="personInfoManCon content">
+    <div class="white">
+        <h4>修改登录密码</h4>
+
+        <form class="registerform pl10 mt40" action="">
+            <div>
+                <label>原&ensp;密&ensp;码:</label>
+                <input type="password" name="userpassword0" datatype="*6-20" nullmsg="密码不能为空！" ajaxurl="valid.php" errormsg="原密码错误！"/>
+                <span class="Validform_checktip"></span>
+            </div>
+            <div>
+                <label >新&ensp;密&ensp;码:</label>
+                <input type="password" name="userpassword1" value="" datatype="*6-20" nullmsg="密码不能为空！"/>
+                <span class="Validform_checktip"></span>
+            </div>
+            <div>
+                <label >重复密码:</label>
+                <input type="password" name="userpassword2" datatype="*6-20" nullmsg="请再输入一次密码！" recheck="userpassword1" errormsg="您两次输入的账号密码不一致！"/>
+                <span class="Validform_checktip"></span>
+            </div>
+            <div class="form button ml84"><a href="">确认</a></div>
+        </form>
+    </div>
+</div>
+
+<script>
+    $(function(){
+        $(".registerform").Validform({
+            tiptype:3
+        });
+    })
+</script>

@@ -1,0 +1,94 @@
+<div class="withdrawalCon content">
+    <div class="white">
+        <form action="">
+            <p>申请提现</p>
+            <table class="table">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>银行类型</th>
+                        <th>账号</th>
+                        <th>户名</th>
+                        <th>添加时间</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><input type="radio"/></td>
+                        <td>招商银行</td>
+                        <td>621483***********1401</td>
+                        <td>*晖</td>
+                        <td>2014-12-01</td>
+                        <td><a class="red" href="#">删除</a><a class="blue" href="#">修改</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio"/></td>
+                        <td>工商银行</td>
+                        <td>621483***********1401</td>
+                        <td>*晖</td>
+                        <td>2014-12-01</td>
+                        <td><a class="red" href="#">删除</a><a class="blue" href="#">修改</a></td>
+                    </tr>
+                    </tbody>
+            </table>
+            <p class="addBank" data-toggle="modal" data-target="#addBankCard"><a>添加银行卡账号</a></p>
+            <div class="withdrawalNum">
+                <p>
+                    <lable>可提现总额：</lable>
+                    <span>1,345.27元</span>
+                </p>
+
+                <p>
+                    <lable>本次提现金额：</lable>
+                    <input type="text"><span>元</span>
+                </p>
+            </div>
+            <div class="button" data-toggle="modal" data-target="#withdrawal"><a>确认提现</a></div>
+        </form>
+        <div class="tips overH mb30">
+            <p>注：</p>
+            <ol type="1">
+                <li>1、您申请提现后，我们将在1个工作日（国家法定节假日除外）内处理您的申请，具体规则如下：
+                    <ol type="a">
+                        <li class="ml15">（1）每个工作日15:00之前的申请，将在当日进行付款操作；</li>
+                        <li class="ml15">（2）15:00之后的申请，将同下个工作日的申请一起处理；</li>
+                        <li class="ml15">（3）非工作日期间提交的提现申请，将在下一个工作日一并处理。 </li>
+                    </ol>
+                </li>
+                <li>2、提现手续费收取规则：投资回款（本金及利息）免收手续费；未投资资金将收取0.5%手续费。</li>
+            </ol>
+            <p>提现过程遇到任何问题，请拨客服热线：400-868-9418</p>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="withdrawal" class="withdrawal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog z w410" >
+        <div class="modal-content">
+            <div class="modal-header blue-bg">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body fs14">
+                <div class="text-center mb15"><span class="red">提现密码错误1次</span></div>
+                <form  class="addBankCard overH" action="">
+                    <div>
+                        <label class="fw-no w74">提现密码:</label>
+                        <input class="mb15 w250" type="password"/>
+                    </div>
+                    <div>
+                        <label class="fw-no w74">手机验证码:</label>
+                        <input class="mb15 w115" type="text">
+                        <div class="button dline ml10 form"><a class="blue-bg" href="">获取验证码</a></div>
+                    </div>
+                    <div class="accButton fs16 overH w82"><a class="blue-bg white-ft" href="">确认</a><a class="grey-bg" href="">取消</a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $('.datetimepicker').datetimepicker({
+        autoclose:true
+    });
+</script>

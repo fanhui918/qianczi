@@ -1,0 +1,290 @@
+/*main-banner*/
+.banner{
+  /*cyg
+  height: 290px;
+  */
+  height: 660px;
+  background-color: #197DC8;
+}
+.bannerMain{
+  width: 1100px;
+  height: 660px;
+  margin: 0px auto;
+  padding: 0px 50px;
+  position: relative;
+  /*cyg
+  top: -20px;
+  */
+  /*box-shadow: 0px 0px 20px 20px #034678 inset;*/
+}
+.bannerCon{
+  width: 1000px;
+  height: 660px;
+  padding:0px 20px;
+  background-color: #23639A;
+}
+.myCanvas{
+  width:1000px;
+  height:20px;
+  position: relative;
+  left: -20px;
+}
+
+.backg{
+  background-image: url("/source/images/banner-2.png");
+  background-repeat: no-repeat;
+}
+.banner-background{
+  width: 880px;
+  height: 310px;
+  background-position: 0px 0px;
+  position: relative;
+  top: -28px;
+  left: 0px;
+}
+.blueGlass{
+    position:absolute;
+    background-image: url("/source/images/banner.png");
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    width: 772px;
+    height: 358px;
+    top: -20px;
+    right: -28px;
+}
+.yellowGlass{
+    position:absolute;
+    background-image: url("/source/images/banner.png");
+    background-position: 0px -359px;
+    background-repeat: no-repeat;
+    width: 234px;
+    height: 245px;
+    top: 45px;
+    left: 638px;
+}
+.textbg{
+    position:absolute;
+    background-image: url("/source/images/banner.png");
+    background-position: -233px -358px;
+    background-repeat: no-repeat;
+    width: 284px;
+    height: 280px;
+    top:0px;
+    left: 15px;
+}
+.moneyBag{
+    position:absolute;
+    background-image: url("/source/images/banner.png");
+    background-position: 0px -635px;
+    background-repeat: no-repeat;
+    width: 515px;
+    height: 145px;
+    top:115px;
+    left: 364px;
+    z-index: 1;
+}
+.said{
+    position: absolute;
+    background-image: url("/source/images/banner.png");
+    background-position: -519px -359px;
+    background-repeat: no-repeat;
+    width: 79px;
+    height: 70px;
+    top:238px;
+    left: 560px;
+}
+.money{
+    position: absolute;
+    background-image: url("/source/images/banner.png");
+    background-position: -519px -429px;
+    background-repeat: no-repeat;
+    width: 43px;
+    height: 104px;
+    top:58px;
+    left: 434px;
+}
+
+.banner-text{
+  width: 243px;
+  height: 121px;
+  margin-left: 42px;
+  margin-top: 0px;
+  position: relative;
+  top:132px;
+}
+.ban-text{
+  height: 36px;
+}
+.enter{
+    font-size: 12px;
+    line-height: 36px;
+    margin-top: 6px;
+    text-align: right;
+}
+.enter a{
+    color: #428BCA;
+}
+.ban-text:first-child{
+  margin-bottom: 17px;
+}
+.ban-text p.text{
+  font-size: 12px;
+  color: #56595A;
+  margin: 0px;
+}
+.ban-text p.data{
+  color:#FC4C22;
+  margin: 0px;
+}
+/*main-banner*/
+/*main-news*/
+.news{
+  height: 130px;
+  /*cyg
+  height: 90px;
+  */
+  background-color: #F77151;
+}
+.newsMain{
+  width: 1100px;
+  height: 130px;
+  /*cyg
+  height: 90px;
+  */
+  margin: 0px auto;
+  padding: 0px 50px;
+}
+.newsCon{
+  width: 1000px;
+  height: 130px;
+  /*cyg
+  height: 90px;
+  */
+  padding:0px 20px;
+}
+[class*=newsbox]{
+  /*cyg
+  height: 90px;
+  padding-top: 15px;
+  */
+  height: 70px;
+  margin: 30px 0px;
+  float: left;
+  text-align: center;
+}
+.icon-invest{
+  margin-left: -10px;
+  margin-right: 10px;
+}
+.icon-revenue{
+  margin-right: 15px;
+}
+.icon-user{
+  margin-left: 25px;
+}
+.newsbox1,.newsbox3{
+  width: 306px;
+}
+.newsbox2{
+  width: 348px;
+  /*cyg
+  border-left: 2px solid #C65A41;
+  border-right: 2px solid #F98D74;
+  */
+}
+.newsbox1{
+  border-right: 1px solid #F98D74;
+}
+.newsbox3{
+  border-left: 1px solid #F98D74;
+}
+.newsText{
+  display: inline-block; *zoom: 1;*display: inline-block;
+}
+.newsText p{
+  margin: 0px;
+}
+.newsText p.text{
+  color: #FFB4A2;
+  font-size: 16px;
+}
+.newsText p.data{
+  color: #fff;
+  font-size: 30px;
+}
+/*main-news*/
+/*main-product*/
+.product{
+  height: 1840px;
+  background-color:#F4F4F4;
+}
+.productMain{
+  width: 1100px;
+  height: 1844px;
+  margin: 0px auto;
+  padding: 0px 50px;
+}
+[class|=productCon]{
+  width: 1000px;
+  height: 460px;
+  padding:0px 20px;
+  margin-top: 0px;
+}
+[class|=productCon]>div{
+  float: left;
+}
+.productCon-1{
+  background-color: #4EC0EC;
+}
+.productCon-2{
+  background-color: #fff;
+}
+.productImg{
+  width: 310px;height: 310px;
+  background-image: url('/source/images/prod-24.png');
+  background-repeat: no-repeat;
+  margin: 70px 40px;
+}
+.productText{
+  width: 560px;
+  overflow: hidden;
+  margin-top: 110px;
+}
+.productText p{
+  font-size: 20px;
+  margin: 0px;
+  margin-bottom: 19px;
+}
+.productText p:first-child{
+  font-size: 28px;
+}
+.productCon-1 p{
+  color: #fff;
+  text-align: right;
+  text-shadow:-2px 1px 1px #3E9ABD;
+}
+.productCon-2 p{
+  color: #4EC0EC;
+  text-align: left;
+  text-shadow:-2px 1px 1px #eee;
+}
+.productMain .buttonBox{
+  position: absolute;
+  right: 156px;
+  bottom: 40px;
+}
+.productMain .buttonBox .but:first-child{
+  margin-right: 45px;
+}
+.but{
+    width: 168px;
+    height: 66px;
+    border: 1px solid #FCCDC1;
+    color: #F77151;
+    border-radius: 7px;
+}
+.but.default{
+    background-color: #F77151;
+    color: #fff;
+}
+/*main-product*/

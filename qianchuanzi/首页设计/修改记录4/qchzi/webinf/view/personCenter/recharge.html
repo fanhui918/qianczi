@@ -1,0 +1,66 @@
+<div class="rechargeCon white">
+    <h4>账户充值</h4>
+    <hr/>
+    <form action="">
+        <div>
+            <h4>第一步：选择充值方式</h4>
+            <div class="mt25 mb30">
+                <h5 class="m0">通过银行储蓄卡充值</h5>
+                <div class="cardName">
+                    <input type="radio"/><span>招商银行</span>
+                    <input type="radio"/><span>招商银行</span>
+                    <input type="radio"/><span>招商银行</span>
+                    <input type="radio"/><span>招商银行</span>
+                    <input type="radio"/><span>招商银行</span>
+                    <input type="radio"/><span>招商银行</span>
+                    <input type="radio"/><span>招商银行</span>
+                    <input type="radio"/><span>招商银行</span>
+                    <input type="radio"/><span>招商银行</span>
+                    <input type="radio"/><span>招商银行</span>
+                    <input type="radio"/>
+                    <select class="fs14 ml5 mt20" name="" id="">
+                        <option value="">选择更多银行</option>
+                        <option value="">工商银行</option>
+                        <option value="">工商银行</option>
+                    </select>
+                </div>
+                <h5 class="m0">通过渠道充值</h5>
+                <div class="cardName">
+                    <input type="radio"/><span>块钱</span><input type="radio"/><span>新浪宝</span>
+                </div>
+            </div>
+        </div>
+        <div class="fs14 overH money">
+            <h4>第二步：输入充值金额</h4>
+            <p class="m0">
+                <input type="text"/>元
+                <span class="ml15">充值手续费：<span>0.00</span>元</span>
+                <span class="ml15">实际支付金额：<span>0.00</span></span>
+            </p>
+            <p>单笔充值金额必须≥10元（只能有2位小数，如：100.12）</p>
+        </div>
+        <div class="form button mt25" data-toggle="modal" data-target="#recharge"><a>确认</a></div>
+    </form>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="recharge" class="withdrawal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog z w410" >
+        <div class="modal-content">
+            <div class="modal-header blue-bg">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title fs14 white-ft" id="myModalLabel">充值</h4>
+            </div>
+            <div class="modal-body fs14">
+                <div class="text-center mb15 fs16"><span class="">本次充值金额为：10.00元</span></div>
+                <form  class="addBankCard overH" action="">
+                    <div>
+                        充值完成前请不要关闭此窗口，完成充值后请根据您的情况点击下面的按钮。
+                        <span class="fw-b">请在新开网上储蓄卡页面完成付款后再选择。</span>
+                    </div>
+                    <div class="accButton fs16 overH w82"><a class="orange-bg white-ft" href="">已完成充值</a><a class="grey-bg" href="">充值遇到问题</a></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

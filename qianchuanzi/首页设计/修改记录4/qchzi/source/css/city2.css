@@ -1,0 +1,62 @@
+
+
+/*************** bankcards ends ********************/
+
+.city-select-input:hover {
+	cursor:pointer;
+}
+.city-select {
+	width: 550px;
+	border: 1px solid #ccc;
+	position: absolute;
+	font-size: 12px;
+	background-color: #fff;
+	padding: 10px 0;
+	box-shadow: 0 1px 2px 1px #ddd;
+}
+
+.city-select .nav_city {
+	list-style:none;
+	margin: 0;
+	padding: 0 5px;
+	border-bottom: 1px solid #ddd;
+}
+.city-select .nav_city > .tab {
+	float: left;
+	padding: 5px 15px;
+}
+.city-select .nav_city > .tab.selected{
+	border: 1px solid #ddd;
+	border-bottom: 1px solid #fff;
+	margin-bottom: -1px;
+}
+
+.city-select .nav_city > .tab > a{
+	color: #888;	
+}
+.city-select .tab-content {
+	padding: 10px 20px 0 20px;
+}
+.city-select .tab-content > a {
+	color: #666;
+	width: 75px;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.city-select .tab-content .letter {
+	color: #ee6343;
+	width: 12px;
+}
+.city-select .tab-content .cities {
+	width: 480px;
+	margin-left: 10px;
+}
+.city-select .tab-content .cities > a {
+	color: #666;
+	width: 75px;
+	display: inline-block;
+	margin-bottom: 5px;	
+}
+.city-select .nav_city > .tab > a:hover, .city-select .tab-content > a:hover, .city-select .tab-content .cities > a:hover {
+	color: #ee6343;	
+}
